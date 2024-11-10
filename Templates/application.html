@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Application</title>
+  <link href="{% static 'assets/bootstrap-dist/bootstrap.min.css' %}" rel="stylesheet" />
+
+  <link href="{% static 'assets/css/fonts.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- TOP-NAV-INFO START -->
+  <div class="container-fluid top-info-nav fixed-top">
+    <div class="d-flex gap-2 gap-sm-5 justify-content-center respon-row">
+      <div class="contact-info d-flex align-items-center gap-2 gap-sm-3">
+        <span class="contact-number">
+          <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+            stroke-linejoin="round" class="phone-icon" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          +91 94261 05559</span>
+        <span class="contact-divider"></span>
+        <span class="contact-email">
+          <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" class="email-icon"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+            </path>
+          </svg>
+          bamokamnc@gmail.com</span>
+      </div>
+
+      <div class="social-info social-respon-row d-flex align-items-center gap-2 gap-sm-4">
+        <a class="facebook-icon" href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+            </path>
+          </svg>
+        </a>
+
+        <a class="twitter-icon" href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+            </path>
+          </svg>
+        </a>
+
+        <a class="instagram-icon" href="https://www.instagram.com/bamoka_?igsh=aHJobDJjaGw4djN0" target="_blank" aria-label="Instagram">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- TOP-NAV-INFO END -->
+
+  <div class="hom-main-wrapper">
+    <!-- HEADER START -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-lg custom-nav">
+      <div class="container">
+        <div class="nav-info">
+          <a class="navbar-brand" href="#">
+            <img src="{% static 'assets/images/navbar/nav-brand.png' %}" alt="brand-logo" />
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse nav-right-item justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 pt-4 pt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item dropdown product-sub-menu">
+              <a class="nav-link dropdown-toggle" href="/product">Products</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/fastHydrationproduct">Fast Hydration</a></li>
+                <li><a class="dropdown-item" href="/industrialgradeproduct">Industrial Grade</a></li>
+                <li><a class="dropdown-item" href="/foodgradeproduct">Food Grade</a></li>
+                <li><a class="dropdown-item" href="/churiproduct">Churi</a></li>
+                <li><a class="dropdown-item" href="/kormaproduct">Korma</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="/applcation">Applications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/packagingstorage">Packaging & Storage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/qualitycontrol">Quality Control</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+
+          <div class="position-relative d-flex gap-2">
+            <!-- Search Icon -->
+            <div class="search-container">
+              <button class="search-btn" id="search-toggle">
+                <svg stroke="#424242" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="18px"
+                  width="18px" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M456.69 421.39 362.6 327.3a173.81 173.81 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3zM97.92 222.72a124.8 124.8 0 1 1 124.8 124.8 124.95 124.95 0 0 1-124.8-124.8z">
+                  </path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Search Input (hidden by default) -->
+            <div class="search-input-container collapse" id="searchInput">
+              <input type="text" class="form-control" placeholder="Search..." />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER END -->
+
+    <!-- MAIN SECTION START -->
+    <div class="main_section_wrapper h-100">
+      <div class="main_section_wrapp h-100">
+        <!-- HERO SECTION START -->
+        <div class="hero_wrapper d-flex justify-content-center align-items-center h-100">
+          <div class="container">
+            <div class="hero-content-wrapp text-center">
+              <h1 class="hero-title">Application</h1>
+            </div>
+          </div>
+        </div>
+        <!-- HERO SECTION END -->
+
+        <!-- PRODUCT LIST TAB START -->
+        <section class="pt-3 pt-lg-5">
+          <div class="container">
+            <div class="dp-nav-pill product-list-tab bg-transparent shadow-none">
+              <div class="overflow-auto w-100 box-nav-pill-shadow rounded">
+
+                <ul class="nav nav-pills gap-3 p-4 flex-nowrap bg-white" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-food-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-food" type="button" role="tab" aria-controls="pills-food"
+                      aria-selected="true">Guar Powder</button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-pharmaceutical-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-pharmaceutical" type="button" role="tab"
+                      aria-controls="pills-pharmaceutical" aria-selected="false">For Pharmaceutical</button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-cosmetics-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-cosmetics" type="button" role="tab" aria-controls="pills-cosmetics"
+                      aria-selected="false">For Cosmetic Industries</button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-gum-powder-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-gum-powder" type="button" role="tab" aria-controls="pills-gum-powder"
+                      aria-selected="false">
+                      Guar Gum Powder
+                    </button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-paper-tab" data-bs-toggle="pill" data-bs-target="#pills-paper"
+                      type="button" role="tab" aria-controls="pills-paper" aria-selected="false">For Paper
+                      Industry</button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-textile-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-textile" type="button" role="tab" aria-controls="pills-textile"
+                      aria-selected="false">For Textile Industry</button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-oil-field-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-oil-field" type="button" role="tab" aria-controls="pills-oil-field"
+                      aria-selected="false">In Oil Field Applications</button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-metallurgical-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-metallurgical" type="button" role="tab" aria-controls="pills-metallurgical"
+                      aria-selected="false">Metallurgical and Mining</button>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="tab-content p-4 pb-5" id="pills-tabContent">
+                <div class="tab-pane fade show active ps-2 ps-md-5" id="pills-food" role="tabpanel"
+                  aria-labelledby="pills-home-tab" tabindex="0">
+                  <div class="">
+                    <div class="guar-pow-dis-con py-3">
+                      <p class="gp-dis">
+                        Guar Gum and its derivatives are widely used in various industries as per its needs. It is used
+                        in
+                        industries such as food, animal feed, textile, pharmaceuticals,
+                        personal care, health care, nutrition, cosmetics, paper, explosives, mining and oil drilling.
+                        Altrafine gums, Ahmedabad, India provides guar gum for pulp and
+                        paper industry, guar gum for textiles and also guar gum for cosmetics industry. Guar seeds or
+                        cyamopsis tetragonoloba termed as Guar Gum. Guar gum as
+                        natural gums is advantages as natural gelling agent for different industrial purpose.
+                      </p>
+                    </div>
+
+                    <div class="gp-list">
+                      <div class="gp-list-title pb-3">
+                        <h5 class="title-gp">Guar Gum is mainly used as a</h5>
+                      </div>
+
+                      <ul class="gp-check-list ps-4 row">
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural thickener</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Gelling agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Emulsifier</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Soil Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural fiber</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Bonding agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Flocculants</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Hydrocolloid</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Fracturing agent</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade ps-2 ps-md-5" id="pills-pharmaceutical" role="tabpanel"
+                  aria-labelledby="pills-pharmaceutical-tab">
+                  <div class="">
+                    <div class="guar-pow-dis-con py-3">
+                      <p class="gp-dis">
+                        Guar Gum and its derivatives are widely used in various industries as per its needs. It is used
+                        in
+                        industries such as food, animal feed, textile, pharmaceuticals,
+                        personal care, health care, nutrition, cosmetics, paper, explosives, mining and oil drilling.
+                        Altrafine gums, Ahmedabad, India provides guar gum for pulp and
+                        paper industry, guar gum for textiles and also guar gum for cosmetics industry. Guar seeds or
+                        cyamopsis tetragonoloba termed as Guar Gum. Guar gum as
+                        natural gums is advantages as natural gelling agent for different industrial purpose.
+                      </p>
+                    </div>
+
+                    <div class="gp-list">
+                      <div class="gp-list-title pb-3">
+                        <h5 class="title-gp">Guar Gum is mainly used as a</h5>
+                      </div>
+
+                      <ul class="gp-check-list ps-4 row">
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural thickener</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Gelling agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Emulsifier</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Soil Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural fiber</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Bonding agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Flocculants</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Hydrocolloid</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Fracturing agent</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade ps-2 ps-md-5" id="pills-cosmetics" role="tabpanel"
+                  aria-labelledby="pills-cosmetics-tab">
+                  <div class="">
+                    <div class="guar-pow-dis-con py-3">
+                      <p class="gp-dis">
+                        Guar Gum and its derivatives are widely used in various industries as per its needs. It is used
+                        in
+                        industries such as food, animal feed, textile, pharmaceuticals,
+                        personal care, health care, nutrition, cosmetics, paper, explosives, mining and oil drilling.
+                        Altrafine gums, Ahmedabad, India provides guar gum for pulp and
+                        paper industry, guar gum for textiles and also guar gum for cosmetics industry. Guar seeds or
+                        cyamopsis tetragonoloba termed as Guar Gum. Guar gum as
+                        natural gums is advantages as natural gelling agent for different industrial purpose.
+                      </p>
+                    </div>
+
+                    <div class="gp-list">
+                      <div class="gp-list-title pb-3">
+                        <h5 class="title-gp">Guar Gum is mainly used as a</h5>
+                      </div>
+
+                      <ul class="gp-check-list ps-4 row">
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural thickener</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Gelling agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Emulsifier</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Soil Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural fiber</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Bonding agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Flocculants</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Hydrocolloid</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Fracturing agent</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade ps-2 ps-md-5" id="pills-gum-powder" role="tabpanel"
+                  aria-labelledby="pills-gum-powder-tab">
+                  <div class="">
+                    <div class="guar-pow-dis-con py-3">
+                      <p class="gp-dis">
+                        Guar Gum and its derivatives are widely used in various industries as per its needs. It is used
+                        in
+                        industries such as food, animal feed, textile, pharmaceuticals,
+                        personal care, health care, nutrition, cosmetics, paper, explosives, mining and oil drilling.
+                        Altrafine gums, Ahmedabad, India provides guar gum for pulp and
+                        paper industry, guar gum for textiles and also guar gum for cosmetics industry. Guar seeds or
+                        cyamopsis tetragonoloba termed as Guar Gum. Guar gum as
+                        natural gums is advantages as natural gelling agent for different industrial purpose.
+                      </p>
+                    </div>
+
+                    <div class="gp-list">
+                      <div class="gp-list-title pb-3">
+                        <h5 class="title-gp">Guar Gum is mainly used as a</h5>
+                      </div>
+
+                      <ul class="gp-check-list ps-4 row">
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural thickener</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Gelling agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Emulsifier</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Soil Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural fiber</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Bonding agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Flocculants</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Hydrocolloid</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Fracturing agent</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade ps-2 ps-md-5" id="pills-paper" role="tabpanel"
+                  aria-labelledby="pills-paper-tab">
+                  <div class="">
+                    <div class="guar-pow-dis-con py-3">
+                      <p class="gp-dis">
+                        Guar Gum and its derivatives are widely used in various industries as per its needs. It is used
+                        in
+                        industries such as food, animal feed, textile, pharmaceuticals,
+                        personal care, health care, nutrition, cosmetics, paper, explosives, mining and oil drilling.
+                        Altrafine gums, Ahmedabad, India provides guar gum for pulp and
+                        paper industry, guar gum for textiles and also guar gum for cosmetics industry. Guar seeds or
+                        cyamopsis tetragonoloba termed as Guar Gum. Guar gum as
+                        natural gums is advantages as natural gelling agent for different industrial purpose.
+                      </p>
+                    </div>
+
+                    <div class="gp-list">
+                      <div class="gp-list-title pb-3">
+                        <h5 class="title-gp">Guar Gum is mainly used as a</h5>
+                      </div>
+
+                      <ul class="gp-check-list ps-4 row">
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural thickener</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Gelling agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Emulsifier</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Soil Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural fiber</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Bonding agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Flocculants</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Hydrocolloid</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Fracturing agent</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade ps-2 ps-md-5" id="pills-textile" role="tabpanel"
+                  aria-labelledby="pills-textile-tab">
+                  <div class="">
+                    <div class="guar-pow-dis-con py-3">
+                      <p class="gp-dis">
+                        Guar Gum and its derivatives are widely used in various industries as per its needs. It is used
+                        in
+                        industries such as food, animal feed, textile, pharmaceuticals,
+                        personal care, health care, nutrition, cosmetics, paper, explosives, mining and oil drilling.
+                        Altrafine gums, Ahmedabad, India provides guar gum for pulp and
+                        paper industry, guar gum for textiles and also guar gum for cosmetics industry. Guar seeds or
+                        cyamopsis tetragonoloba termed as Guar Gum. Guar gum as
+                        natural gums is advantages as natural gelling agent for different industrial purpose.
+                      </p>
+                    </div>
+
+                    <div class="gp-list">
+                      <div class="gp-list-title pb-3">
+                        <h5 class="title-gp">Guar Gum is mainly used as a</h5>
+                      </div>
+
+                      <ul class="gp-check-list ps-4 row">
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural thickener</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Gelling agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Emulsifier</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Soil Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural fiber</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Bonding agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Flocculants</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Hydrocolloid</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Fracturing agent</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade ps-2 ps-md-5" id="pills-oil-field" role="tabpanel"
+                  aria-labelledby="pills-oil-field">
+                  <div class="">
+                    <div class="guar-pow-dis-con py-3">
+                      <p class="gp-dis">
+                        Guar Gum and its derivatives are widely used in various industries as per its needs. It is used
+                        in
+                        industries such as food, animal feed, textile, pharmaceuticals,
+                        personal care, health care, nutrition, cosmetics, paper, explosives, mining and oil drilling.
+                        Altrafine gums, Ahmedabad, India provides guar gum for pulp and
+                        paper industry, guar gum for textiles and also guar gum for cosmetics industry. Guar seeds or
+                        cyamopsis tetragonoloba termed as Guar Gum. Guar gum as
+                        natural gums is advantages as natural gelling agent for different industrial purpose.
+                      </p>
+                    </div>
+
+                    <div class="gp-list">
+                      <div class="gp-list-title pb-3">
+                        <h5 class="title-gp">Guar Gum is mainly used as a</h5>
+                      </div>
+
+                      <ul class="gp-check-list ps-4 row">
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural thickener</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Gelling agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Emulsifier</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Soil Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural fiber</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Bonding agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Flocculants</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Hydrocolloid</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Fracturing agent</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade ps-2 ps-md-5" id="pills-metallurgical" role="tabpanel"
+                  aria-labelledby="pills-metallurgical">
+                  <div class="">
+                    <div class="guar-pow-dis-con py-3">
+                      <p class="gp-dis">
+                        Guar Gum and its derivatives are widely used in various industries as per its needs. It is used
+                        in
+                        industries such as food, animal feed, textile, pharmaceuticals,
+                        personal care, health care, nutrition, cosmetics, paper, explosives, mining and oil drilling.
+                        Altrafine gums, Ahmedabad, India provides guar gum for pulp and
+                        paper industry, guar gum for textiles and also guar gum for cosmetics industry. Guar seeds or
+                        cyamopsis tetragonoloba termed as Guar Gum. Guar gum as
+                        natural gums is advantages as natural gelling agent for different industrial purpose.
+                      </p>
+                    </div>
+
+                    <div class="gp-list">
+                      <div class="gp-list-title pb-3">
+                        <h5 class="title-gp">Guar Gum is mainly used as a</h5>
+                      </div>
+
+                      <ul class="gp-check-list ps-4 row">
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural thickener</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Gelling agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Emulsifier</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Soil Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Stabiliser</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Natural fiber</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Bonding agent</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Flocculants</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Hydrocolloid</li>
+                        <li class="col-12 col-sm-6 align-items-center p-2">Fracturing agent</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PRODUCT LIST TAB END -->
+
+        <!-- FOOD GRADE START -->
+        <section class="fd_wrapper pb-3 pb-lg-5">
+          <div class="container">
+            <div class="fd_wrapp">
+              <div class="row mb-3">
+                <div class="fd-title-con col-12 col-sm-8 col-lg-9">
+                  <h5 class="fd-title mb-2">Food Grade <span class="d-block">Guar Gum Powder</span></h5>
+                  <p class="fd-dis mb-3 mb-sm-0">
+                    Guar gum is one of the best thickening additives, emulsifying additives and stabilizing additives.
+                    In Food Industry Guar gum is used as gelling, viscosifying, thickening, clouding, and binding
+                    agent as well as used for stabilization, emulsification, preservation, water retention, enhancement
+                    of water soluble fiber content etc.
+                  </p>
+                </div>
+
+                <div class="fd-right-img col-12 col-sm-4 col-lg-3">
+                  <div class="row g-2">
+                    <div class="col-4">
+                      <img class="fd-img" src="{% static 'assets/images/application/iStock-157671800.jpeg' %}" alt="fd-img">
+                    </div>
+                    <div class="col-8">
+                      <img class="fd-img" src="{% static 'assets/images/application/3dcf3df744.jpeg' %}" alt="fd-img">
+                    </div>
+
+                    <div class="col-8">
+                      <img class="fd-img" src="{% static 'assets/images/application/677bc9b601.jpeg' %}" alt="fd-img">
+                    </div>
+                    <div class="col-4">
+                      <img class="fd-img" src="{% static 'assets/images/application/310cc59270.jpeg' %}" alt="fd-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gp-list">
+                <div class="gp-list-title pb-3">
+                  <h5 class="title-gp">Some food products in which guar gum powder is used:</h5>
+                </div>
+
+                <ul class="gp-check-list ps-4 row">
+                  <li class="col-12 col-sm-6 align-items-center p-2">Ice Cream, soft drinks & concentrates, puddings
+                  </li>
+                  <li class="col-12 col-sm-6 align-items-center p-2">Soft cheese and cheese spreads</li>
+                  <li class="col-12 col-sm-6 align-items-center p-2">Chocolate milk, flavoured milks</li>
+                  <li class="col-12 col-sm-6 align-items-center p-2">Canned or retorted food of fish and meat</li>
+                  <li class="col-12 col-sm-6 align-items-center p-2">Jams, jellies, fruit spreads, jelly sweets</li>
+                  <li class="col-12 col-sm-6 align-items-center p-2">Myonnaise, ketchup, sauce and dressings</li>
+                  <li class="col-12 col-sm-6 align-items-center p-2">BoBread, biscuit and other baked foodsnding agent
+                  </li>
+                  <li class="col-12 col-sm-6 align-items-center p-2">Noodles and pasta</li>
+                  <li class="col-12 col-sm-6 align-items-center p-2">Ham and sausages</li>
+                </ul>
+              </div>
+
+              <div class="dp-nav-pill shadow-none mt-3 ps-3">
+                <ul class="dp-nav-list d-flex flex-column gap-2">
+                  <li class="dp-nav-item">
+                    In Frozen Food Products: <span>Guar gum reduces crystal formation, act as a binder & stabilizer to
+                      extend shelf life of Ice-cream.</span>
+                  </li>
+                  <li class="dp-nav-item">
+                    In Baked Food Products: <span>Guar gum provides unparallel moisture preservation to the dough and
+                      retards fat penetration in baked foods.</span>
+                  </li>
+                  <li class="dp-nav-item">
+                    In Dairy Products: <span>Guar Gum improves texture, maintains uniform viscosity and color.</span>
+                  </li>
+                  <li class="dp-nav-item">
+                    In Sauces & Salad preparations: <span>Guar gum acts as a water binder in sauces & salad dressings
+                      and reduces water & oil separation.</span>
+                  </li>
+                  <li class="dp-nav-item">
+                    In Confections: <span>Guar gum controls viscosity, bloom, gel creation, glazing & moisture retention
+                      to produce the highest grade confectionary.</span>
+                  </li>
+                  <li class="dp-nav-item">
+                    In Beverages: <span>Guar gum provides outstanding viscosity control and reduces calories value in
+                      low calories beverages.</span>
+                  </li>
+                  <li class="dp-nav-item">
+                    In Pet Food: <span>Guar gum forms gels & retains moisture, acts as a thickening, stabilizer and
+                      suspending agent for veterinary preparations.</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- FOOD GRADE END -->
+
+        <!-- PHARMACEUTICAL INDUSTRIES START -->
+        <section class="pm_industries_wrapper">
+          <div class="container">
+            <div class="pm_industries_wrapp">
+              <div class="row">
+                <div class="d-none d-sm-block col-sm-5 col-lg-3 order-2 order-md-1">
+                  <div class="img-group-pm gap-2">
+                    <div class="pm-row-span-1">
+                      <img class="fd-img h-100" src="{% static 'assets/images/application/5b9ad35ca4.jpeg' %}" alt="fd-img">
+                    </div>
+                    <div class="pm-row-span-2">
+                      <img class="fd-img h-100" src="{% static 'assets/images/application/c373055e6c.jpeg' %}" alt="fd-img">
+                    </div>
+
+                    <div class="pm-row-span-2">
+                      <img class="fd-img h-100" src="{% static 'assets/images/application/6dc85cdeee.jpeg' %}" alt="fd-img">
+                    </div>
+                    <div class="pm-row-span-1">
+                      <img class="fd-img h-100" src="{% static 'assets/images/application/96063f770e.jpeg' %}" alt="fd-img">
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-12 col-sm-7 col-lg-9 order-1 order-md-2">
+                  <div class="fd-title-con col-12 col-sm-8 col-lg-9 w-100">
+                    <h5 class="fd-title mb-2">Guar Gum for
+                      <span class="d-block">Pharmaceutical Industries</span>
+                    </h5>
+                    <p class="fd-dis mb-3 mb-sm-0">
+                      Guar gum powder is used in pharmaceutical industries as Gelling/ Viscosifying/Thickening,
+                      Suspension, Stabilization, Emulsification, Preservation, Water Retention/Water Phase control,
+                      Binding, Clouding/Bodying, Process aid, Pour control for following applications.
+                    </p>
+                    <p class="fd-dis mb-3 mb-sm-0 mt-2">
+                      In tablet manufacturing it is used as a binder and disintegrating agent and in micro-encapsulation
+                      of
+                      drugs.
+                    </p>
+                  </div>
+                  <ul class="gp-check-list ps-4 row">
+                    <li class="col-12 align-items-center p-2">Suspensions</li>
+                    <li class="col-12 align-items-center p-2">Anti-acid formulations</li>
+                    <li class="col-12 align-items-center p-2">Tablet binding and disintegration agent</li>
+                    <li class="col-12 align-items-center p-2">Controlled drug delivery systems</li>
+                    <li class="col-12 align-items-center p-2">Slimming aids</li>
+                    <li class="col-12 align-items-center p-2">Nutritional foods</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="pm-des-con">
+                <p class="pm-des">Guar Gum is an important non-caloric source of soluble dietary fiber. Guar gum powder
+                  is widely used in capsules as dietary fiber. Fiber is a very important
+                  element of any healthy diet. It is useful in clear and cleanses the intestinal system since fiber can
+                  not be digested. This keeps the intestines functioning
+                  properly and also improves certain disorders and ailments. All natural fiber diet works with body to
+                  achieve a feeling of fullness and to reduce hunger.
+                  Its synergistic mix of guar gum and fiber mixture when taken with water expands in stomach to produce
+                  a feeling of fullness.</p>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pm_industries_wrapper py-2 py-lg-5">
+          <div class="container">
+            <div class="pm_industries_wrapp">
+              <div class="row mb-3">
+                <div class="fd-title-con col-12 col-sm-8 col-lg-9">
+                  <h5 class="fd-title mb-2">Guar Gum for <span class="d-block">Cosmetic Industries</span></h5>
+
+                  <ul class="gp-check-list ps-4 row">
+                    <li class="col-12 align-items-center p-2">Used as a thickener, protective colloid in Skin
+                      care products, creams an</li>
+                    <li class="col-12 align-items-center p-2">Also used in toothpaste, and shaving cream for
+                      easy extruding from the container tube.</li>
+                  </ul>
+                </div>
+
+                <div class="fd-right-img col-12 col-sm-4 col-lg-3">
+                  <div class="row g-2">
+                    <div class="col-4">
+                      <img class="fd-img" src="{% static 'assets/images/application/0ac5c75476.jpeg' %}" alt="fd-img">
+                    </div>
+                    <div class="col-8">
+                      <img class="fd-img" src="{% static 'assets/images/application/b831a6eb4f.jpeg' %}" alt="fd-img">
+                    </div>
+
+                    <div class="col-8">
+                      <img class="fd-img" src="{% static 'assets/images/application/7c73750417.jpeg' %}" alt="fd-img">
+                    </div>
+                    <div class="col-4">
+                      <img class="fd-img" src="{% static 'assets/images/application/4a91b1129b.jpeg' %}" alt="fd-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pm_industries_wrapper">
+          <div class="container">
+            <div class="pm_industries_wrapp">
+              <div class="row">
+                <div class="d-none d-sm-block col-sm-6 col-lg-4 order-2 order-md-1">
+                  <div class="img-group-pm gap-2 h-auto">
+                    <div class="pm-row-span-1">
+                      <img class="fd-img h-100" src="{% static 'assets/images/application/1a6e575772.jpeg' %}" alt="fd-img">
+                    </div>
+                    <div class="pm-row-span-2">
+                      <img class="fd-img h-100"
+                        src="{% static 'assets/images/application/c8cf64e9aafd018f679e3fee4a595c2c-1750160205.png' %}" alt="fd-img">
+                    </div>
+
+                    <div class="pm-row-span-2">
+                      <img class="fd-img h-100" src="{% static 'assets/images/application/e7824ed151.jpeg' %}" alt="fd-img">
+                    </div>
+                    <div class="pm-row-span-1">
+                      <img class="fd-img h-100" src="{% static 'assets/images/application/46102ab808.jpeg' %}" alt="fd-img">
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-8 order-1 order-md-2">
+                  <div class="fd-title-con col-12 col-sm-8 col-lg-9 w-100">
+                    <h5 class="fd-title mb-2">Industrial Grade
+                      <span class="d-block">Guar Gum Powder</span>
+                    </h5>
+                    <p class="fd-dis mb-3 mb-sm-0">
+                      In Industrial Applications guar gum powder is a very versatile product and finds its different
+                      applications,
+                      as thickening, sizing agent, wet-end strength additive, gelling agent and water barrier,
+                      flocculation aid,
+                      for waste water treatment, as emulsifier, binder. Also used for mud formulations, enhanced oil
+                      recovery,
+                      polymer flooding, well treatment, lost circulation plugging etc. Mining grade guar gum is used in
+                      mining
+                      industry as a floatation agent flocculating or setting better quality agent. Fast hydration guar
+                      gum powder
+                      for oil drilling applications is an important advantage of guar gum. Altrafine Gums in India
+                      supply oil drilling
+                      grade guar gum, guar gum for paper industry, guar gum as an emulsifying, guaran and sickle pod.
+                    </p>
+                    <p class="pm-dis mb-3 mb-sm-0 mt-2">
+                      Guar Gum Industrial grade powder is used in some industries as follows:
+                    </p>
+                  </div>
+                  <ul class="gp-check-list ps-4 row">
+                    <li class="col-12 col-sm-6 align-items-center p-2">Textile Printing & Sizing</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Battery Electrolytes</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Fire Fighting</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Water Treatment</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Ceramics</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Floatation Agent</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Pharmaceuticals</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Water Paint</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Printing Inks</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Carpet Printing</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Mosquito Mats</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Oil Well Drilling</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Synthetic Resins</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Explosives</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Paper Industry</li>
+                    <li class="col-12 col-sm-6 align-items-center p-2">Mining</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="pm-des-con">
+                <p class="pm-des">Guar Gum is an important non-caloric source of soluble dietary fiber. Guar gum powder
+                  is widely used in capsules as dietary fiber. Fiber is a very important
+                  element of any healthy diet. It is useful in clear and cleanses the intestinal system since fiber can
+                  not be digested. This keeps the intestines functioning
+                  properly and also improves certain disorders and ailments. All natural fiber diet works with body to
+                  achieve a feeling of fullness and to reduce hunger.
+                  Its synergistic mix of guar gum and fiber mixture when taken with water expands in stomach to produce
+                  a feeling of fullness.</p>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pm_industries_wrapper py-2 py-lg-5">
+          <div class="container">
+            <div class="pm_industries_wrapp">
+              <div class="row mb-3">
+                <div class="fd-title-con col-12 col-sm-8">
+                  <h5 class="fd-title mb-2">Guar Gum for <span class="d-block">Paper Industry</span></h5>
+
+                  <ul class="gp-check-list ps-4 row">
+                    <li class="col-12 align-items-center p-2">Guar Gum provides better properties compared to
+                      substitutes.</li>
+                    <li class="col-12 align-items-center p-2">It gives denser surface to the paper used for printing.
+                    </li>
+                    <li class="col-12 align-items-center p-2">Guar Gum imparts improved erasive and writing properties,
+                      better bonding strength & increased hardness.
+                    </li>
+                    <li class="col-12 align-items-center p-2">Due to improved adhesion, it gives better breaking, mullen
+                      and folding strengths.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="fd-right-img col-12 col-sm-4">
+                  <img class="fd-img h-100" src="{% static 'assets/images/application/f39de93585.jpeg' %}" alt="fd-img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pm_industries_wrapper">
+          <div class="container">
+            <div class="pm_industries_wrapp">
+              <div class="row mb-3">
+                <div class="fd-title-con col-12 col-sm-9 order-1 order-sm-2">
+                  <h5 class="fd-title mb-2">Guar Gum for <span class="d-block">Textile Industry</span></h5>
+
+                  <ul class="gp-check-list ps-4 row">
+                    <li class="col-12 align-items-center p-2">Guar Gum gives excellent film forming and thickening
+                      properties when used for textile sizing, finishing and printing.</li>
+                    <li class="col-12 align-items-center p-2">It reduces warp breakage, reduces dusting while sizing and
+                      gives better efficiency in production.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="fd-right-img col-12 col-sm-3 order-2 order-sm-1">
+                  <img class="fd-img h-100" src="{% static 'assets/images/application/767d2c45b0.jpeg' %}" alt="fd-img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pm_industries_wrapper py-2 py-lg-5">
+          <div class="container">
+            <div class="pm_industries_wrapp">
+              <div class="row mb-3">
+                <div class="fd-title-con col-12 col-sm-9">
+                  <h5 class="fd-title mb-2">Guar Gum in <span class="d-block">Oil Field Applications</span></h5>
+
+                  <ul class="gp-check-list ps-4 row">
+                    <li class="col-12 align-items-center p-2">Industrial grade Guar gum powder are use in oil well
+                      fracturing, oil well stimulation, mud drilling and industrial applications and preparations as a
+                      stabilizer, thickener and suspending agent.</li>
+                    <li class="col-12 align-items-center p-2">It is a natural, fast hydrating dispersible guar gum and
+                      is diesel slurriable.
+                    </li>
+                    <li class="col-12 align-items-center p-2">In the oil field industry, guar gum is used as a
+                      surfactant, synthetic polymer and deformer ideally suited for all rheological requirements of
+                      water-based and brine-based drilling fluids.
+                    </li>
+                    <li class="col-12 align-items-center p-2">High viscosity Guar Gum products are used as drilling aids
+                      in oil well drilling, geological drilling and water drilling.
+                    </li>
+                    <li class="col-12 align-items-center p-2">These products are used as viscosifiers to maintain
+                      drilling mud viscosities that enable drilling fluids to remove drill waste from deep holes.
+                    </li>
+                    <li class="col-12 align-items-center p-2">Guar gum products also reduce friction in the holes, and
+                      so minimising power requirements. Some Guar Gum products act to minimise water loss should occur
+                      in broken geological formations.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="fd-right-img col-12 col-sm-3">
+                  <img class="fd-img h-100" src="{% static 'assets/images/application/4f29b1c442.jpeg' %}" alt="fd-img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pm_industries_wrapper">
+          <div class="container">
+            <div class="pm_industries_wrapp">
+              <div class="row mb-3">
+                <div class="fd-title-con col-12 col-sm-7 order-1 order-sm-2">
+                  <h5 class="fd-title mb-2">Guar Gum <span class="d-block">Metallurgical and Mining</span></h5>
+
+                  <ul class="gp-check-list ps-4 row">
+                    <li class="col-12 align-items-center p-2">Guar gum is widely used as a flocculants to produce liquid
+                      solid separation</li>
+                    <li class="col-12 align-items-center p-2">Guar gum is also used in flotation. It acts as a
+                      depressant for talc or insoluble gangue mined along with the valuable minerals
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="fd-right-img col-12 col-sm-5 order-2 order-sm-1">
+                  <div class="row">
+                    <div class="col-10">
+                      <img class="fd-img h-100 custom-h" src="{% static 'assets/images/application/49d11a248c.jpeg' %}" alt="fd-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pm_industries_wrapper py-2 py-lg-5">
+          <div class="container">
+            <div class="pm_industries_wrapp">
+              <div class="row mb-3">
+                <div class="fd-title-con col-12 col-sm-7">
+                  <h5 class="fd-title mb-2">Guar Gum
+                    <span class="d-block">Explosives Applications</span>
+                  </h5>
+
+                  <ul class="gp-check-list ps-4 row">
+                    <li class="col-12 align-items-center p-2">Gelling agents for gel sausage type explosives and
+                      pumpable slurry explosives</li>
+                    <li class="col-12 align-items-center p-2">Cross linking agents for gel and slurry explosives systems
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="fd-right-img col-12 col-sm-5 order-2 order-sm-1">
+                  <div class="row">
+                    <div class="col-10">
+                      <img class="fd-img h-100 custom-h" src="{% static 'assets/images/application/276121-739.jpeg' %}" alt="fd-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PHARMACEUTICAL INDUSTRIES END -->
+
+        <!-- GET IN TOUCH START -->
+        <section class="get-touch-wrapper">
+          <div class="container">
+            <div class="get-touch-wrapp">
+              <div class="get-touch-title-con">
+                <h5 class="con-title text-white text-center mb-4">
+                  GET <span class="gt-small-title">IN TOUCH</span>
+                </h5>
+                <p class="con-sub-title text-white text-center mx-auto">
+                  Bamoka Industries is one of the most prominent
+                  Manufacturers, Exporters and Suppliers of an amazing Guar
+                  Gum Powder in Gujarat, Surat, India.
+                </p>
+              </div>
+
+              <div class="gt-form mt-5">
+                <form action="" class="row g-3">
+                  <div class="col-sm-6 from-input">
+                    <input type="text" placeholder="Name"
+                      class="form-control-plaintext border-bottom ps-1 custom-form-group" />
+                  </div>
+
+                  <div class="col-sm-6 from-input">
+                    <input type="text" placeholder="E-mail"
+                      class="form-control-plaintext border-bottom ps-1 custom-form-group" />
+                  </div>
+
+                  <div class="col-12 from-input">
+                    <textarea placeholder="Comments"
+                      class="form-control-plaintext custom-form-group bg-transparent border-0 border-bottom ps-1"
+                      aria-label="With textarea"></textarea>
+                  </div>
+
+                  <div class="senc-message mt-5">
+                    <button class="read_more_intro text-white w-100">
+                      Sand
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- GET IN TOUCH END -->
+
+        <!-- FOOTER START -->
+        <footer class="footer_wrapper">
+          <div class="container">
+            <div class="footer_wrapp">
+              <div class="row">
+                <div class="col-12 col-xs-6 col-sm-4 d-flex flex-column justify-content-between mt-sm-0 mt-4">
+                  <div class="brand-footer py-2">
+                    <img src="{% static 'assets/images/footer/footer-brand.png' %}" alt="" />
+                  </div>
+
+                  <!-- <div class="brand-footer-con text-white py-2">
+                    X.....Y.....Z.....
+                  </div> -->
+
+                  <div class="brand-social-link py-2">
+                    <div class="social-info d-flex align-items-center gap-2 gap-sm-4">
+                      <a class="facebook-icon d-flex align-item-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                          </path>
+                        </svg>
+                      </a>
+
+                      <a class="twitter-icon d-flex align-item-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                          </path>
+                        </svg>
+                      </a>
+
+                      <a class="instagram-icon d-flex align-item-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                          </path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-xs-6 col-sm-4 col-md-5 mt-sm-0 mt-4">
+                  <ul class="footer-list">
+                    <li class="footer-list-item">
+                      <a class="footer-link-item" href="/">Home</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-link-item" href="/about">About</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-link-item" href="/product">Our Products</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-link-item active" href="/applcation">Applications</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-link-item" href="/packagingstorage">Packaging & Storage</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-link-item" href="/qualitycontrol">Quality Control</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-link-item" href="/contact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-3 mt-4 mt-sm-0">
+                  <div class="fgt-title-con">
+                    <h5 class="fgt-title text-white mb-3">Get In Touch</h5>
+                    <span class="text-white fw-light mb-3"><span class="fw-bold d-inline-block">Head Office</span> : U1
+                      JD
+                      complex, Aat
+                      Road, Eru, Navsari - 396445</span>
+                    <span class="text-white mb-3"> +91 94261 05559</span>
+                    <a href="mailto:bamokamnc@gmail.com">bamokamnc@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Copyright  -->
+              <div class="row py-5">
+                <div class="col-12 ft-copyright border-top">
+                  <p class="text-white text-center pt-4">
+                    2024 Bamoka Industries. All Rights Reserved
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- FOOTER END -->
+      </div>
+    </div>
+
+    <!-- MAIN SECTION END -->
+  </div>
+
+  <script src="{% static 'assets/js/popper.min.js' %}"></script>
+  <script src="{% static 'assets/js/bootstrap.js' %}"></script>
+  <script src="{% static 'assets/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/js/carausol_slider.js' %}"></script>
+  <script src="{% static 'assets/js/custom.js' %}"></script>
+</body>
+
+</html>

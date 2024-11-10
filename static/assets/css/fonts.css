@@ -1,0 +1,14 @@
+@font-face{
+  font-family: "Arial Rounded MT W02 Bold";
+  src: url(../fonts//Arial-Rounded/Arial-Rounded-MT-Bold.woff2)format("woff2");
+  font-weight:normal;
+  font-style:normal;
+  font-display:swap;
+}
+
+@font-face {
+  font-family: 'Arial Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Arial Bold'), url(../fonts/Arial/ARIALBD.woff) format('woff');
+  }

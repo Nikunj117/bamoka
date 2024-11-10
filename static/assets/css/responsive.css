@@ -1,0 +1,599 @@
+@media (max-width: 1399.98px) {
+
+  /* HOME START */
+  /* HERO CSS START */
+  .hero_wrapper .hero-content-wrapp .hero-title {
+    font-size: 80px;
+  }
+
+  .hero_wrapper .hero-content-wrapp .hero-sub-title {
+    font-size: 26px;
+  }
+
+  .main_section_wrapper {
+    margin-top: 116px;
+  }
+
+  /* HERO CSS END */
+
+  /* RP SLIDER CSS START */
+  .slide-card {
+    height: 200px;
+  }
+
+  .sc-des {
+    font-size: 14px;
+  }
+
+  /* RP SLIDER CSS END */
+
+  /* ALLIED PRODUCT START */
+  .ap-wrapper {
+    padding: 50px 0px;
+  }
+
+  /* ALLIED PRODUCT END */
+  /* HOME END */
+
+  /* APPLICATION START */
+  .fd-title-con .fd-title {
+    font-size: 70px;
+  }
+
+  .fd-title-con .fd-title span {
+    font-size: 40px;
+  }
+
+  /* APPLICATION END */
+}
+
+@media (max-width: 1199.98px) {
+
+  /* HOME START */
+  /* HEADER CSS START */
+  .nav-right-item .navbar-nav .nav-link {
+    padding: 10px 10px;
+  }
+
+  /* HEADER CSS END */
+
+  /* HERO CSS START */
+  .hero_wrapper .hero-content-wrapp .hero-title {
+    font-size: 60px !important;
+  }
+
+  .hero_wrapper .hero-content-wrapp .hero-sub-title {
+    font-size: 22px;
+  }
+
+  .hero-contact-btn {
+    font-size: 16px;
+  }
+
+  .main_section_wrapper {
+    margin-top: 124px;
+  }
+
+  /* HERO CSS END */
+
+  /* ALLIED PRODUCT START */
+  .ga-product {
+    width: 156px;
+  }
+
+  .gp-title {
+    font-size: 13px;
+  }
+
+  /* ALLIED PRODUCT END */
+
+  /* INTRO CSS START */
+  .intro-title {
+    font-size: 44px;
+  }
+
+  .intro-sub-title,
+  .mn-title-con .mn-title {
+    font-size: 34px;
+  }
+
+  .intro-sub {
+    font-size: 34px;
+  }
+
+  .intro-about-des {
+    font-size: 28px;
+  }
+
+  .intro_warpper {
+    padding: 40px 0px;
+  }
+
+  .read_more_intro {
+    font-size: 16px;
+    padding: 4px 30px;
+  }
+
+  /* INTRO CSS END */
+  /* HOME END */
+
+  /* ABOUT START */
+  .ind-title-con .ind-title,
+  .ind-title-con .ind-chs,
+  .adp-title-con .adp-title,
+  .adp-title-con .adp-title span,
+  .reg-title-con .reg-title,
+  .character-title {
+    font-size: 34px;
+  }
+
+  /* ABOUT END */
+  .packaging-title-con .packaging-title,
+  .packaging-title-con .storage-title,
+  .packaging-title-con .storage-title span {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 991.98px) {
+
+  /* HOME START */
+  /* HEADER CSS START */
+  .nav-right-item .navbar-nav .nav-link {
+    padding: 0px 10px;
+    margin-bottom: 8px;
+  }
+
+  .search-input-container {
+    position: unset !important;
+  }
+
+  .search-input-container {
+    width: 100% !important;
+  }
+
+  .main_section_wrapper {
+    margin-top: 118px;
+  }
+
+  /* HEADER CSS END */
+  /* TOP INFO NAV CSS START */
+  .contact-number .phone-icon,
+  .contact-email .email-icon,
+  .social-info .facebook-icon svg,
+  .social-info .twitter-icon svg,
+  .social-info .instagram-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* TOP INFO NAV CSS END */
+
+  /* RP SLIDER CSS START */
+  /* OWL CSS START */
+  #rpSlider .owl-dots {
+    display: flex;
+  }
+
+  /* OWL CSS END */
+  /* RP SLIDER CSS END */
+
+  /* ALLIED PRODUCT START */
+  .ap-title {
+    font-size: 30px;
+  }
+
+  /* ALLIED PRODUCT END */
+
+  /* INTRO CSS START */
+  .read_more_intro {
+    font-size: 16px;
+    padding: 4px 30px;
+  }
+
+  .intro-title {
+    font-size: 40px;
+  }
+
+  .intro-sub-title,
+  .mn-title-con .mn-title {
+    font-size: 30px;
+  }
+
+  .intro-sub {
+    font-size: 30px;
+  }
+
+  .intro-about-des {
+    font-size: 24px;
+  }
+
+  .intro_warpper {
+    padding: 40px 0px;
+  }
+
+  .intro-des,
+  .adp-list .adp-item,
+  .dp_wrapper .dp-des,
+  .dp-nav-pill .nav-pills .nav-item .nav-link,
+  .dp-nav-pill .dp-nav-list .dp-nav-item,
+  .pro-space-table,
+  .guar-pow-dis-con .gp-dis,
+  .ps-list-item .ps-item,
+  .mn-title-con .mn-des,
+  .mf-list .mf-item,
+  .row-mn-title-con .cn-des,
+  .reg-title-con .reg-des,
+  .con-body-title .con-des {
+    font-size: 14px;
+  }
+
+  /* INTRO CSS END */
+
+  /* CHOOSE US START */
+
+  .cp-con .cp-title,
+  .cp-con .cp-sub-title {
+    font-size: 34px;
+  }
+
+  .cp-con .cp-des {
+    font-size: 18px;
+  }
+
+  /* CHOOSE US END */
+  /* HOME END */
+
+  /* APPLICATION START */
+  .fd_wrapp {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .fd-title-con .fd-title {
+    font-size: 48px;
+  }
+
+  .fd-title-con .fd-title span {
+    font-size: 28px;
+  }
+
+  /* APPLICATION END */
+}
+
+@media (max-width: 767.98px) {
+
+  /* HOME START */
+  /* TOP INFO NAV CSS START */
+  .top-info-nav {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+  }
+
+  .contact-number .phone-icon,
+  .contact-email .email-icon,
+  .social-info .facebook-icon svg,
+  .social-info .twitter-icon svg,
+  .social-info .instagram-icon svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  /* TOP INFO NAV CSS END */
+
+  /* HEADER CSS START */
+  .custom-nav {
+    top: 49px;
+  }
+
+  /* HEADER CSS END */
+
+  /* HERO CSS START */
+  .hero_wrapper .hero-content-wrapp .hero-title {
+    font-size: 40px !important;
+  }
+
+  .hero_wrapper .hero-content-wrapp .hero-sub-title {
+    font-size: 18px;
+  }
+
+  .hero-contact-btn {
+    font-size: 14px;
+  }
+
+  .main_section_wrapper {
+    margin-top: 110px;
+  }
+
+  /* HERO CSS END */
+
+  /* INTRO CSS START */
+  .read_more_intro {
+    font-size: 16px;
+    padding: 4px 30px;
+  }
+
+  /* INTRO CSS END */
+
+  /* ALLIED PRODUCT START */
+  .ap-wrapper {
+    padding: 25px 0px;
+  }
+
+  .ap-title {
+    font-size: 28px;
+  }
+
+  /* ALLIED PRODUCT END */
+
+  /* CHOOSE US START */
+
+  .cp-con .cp-title,
+  .cp-con .cp-sub-title {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .cp-con .cp-des {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  /* CHOOSE US END */
+
+  /* FOOTER CSS START */
+  .fgt-title-con .fgt-title {
+    font-size: 20px;
+  }
+
+  .footer-list .footer-list-item {
+    padding: 4px 0;
+  }
+
+  .footer-list .footer-link-item,
+  .con-body-title .con-title {
+    font-size: 16px;
+  }
+
+  .fgt-title-con span {
+    font-size: 16px;
+  }
+
+  .brand-social-link .social-info a {
+    padding: 8px;
+  }
+
+  /* FOOTER CSS END */
+  /* HOME END */
+
+  /* APPLICATION START */
+  .fd_wrapp {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .reg-title-con .reg-title,
+  .character-title {
+    font-size: 28px;
+  }
+
+  /* APPLICATION END */
+  .packaging-title-con .packaging-title,
+  .packaging-title-con .storage-title,
+  .packaging-title-con .storage-title span {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  /* HOME START */
+  /* TOP INFO NAV CSS START */
+  .contact-info span {
+    font-size: 12px !important;
+  }
+
+  .contact-number .phone-icon,
+  .contact-email .email-icon,
+  .social-info .facebook-icon svg,
+  .social-info .twitter-icon svg,
+  .social-info .instagram-icon svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  /* TOP INFO NAV CSS END */
+  /* HERO CSS START */
+  .hero_wrapper .hero-content-wrapp .hero-title {
+    font-size: 28px !important;
+  }
+
+  .hero_wrapper .hero-content-wrapp .hero-sub-title {
+    font-size: 16px;
+  }
+
+  .main_section_wrapper {
+    margin-top: 108px;
+  }
+
+  /* HERO CSS END */
+
+  /* INTRO CSS START */
+  .intro-title {
+    font-size: 34px;
+  }
+
+  .intro-sub-title,
+  .mn-title-con .mn-title {
+    font-size: 30px;
+  }
+
+  .intro-sub {
+    font-size: 24px;
+  }
+
+  .intro-about-des {
+    font-size: 18px;
+  }
+
+  .intro_warpper {
+    padding: 40px 0px;
+  }
+
+  .read_more_intro {
+    font-size: 14px;
+    padding: 4px 30px;
+  }
+
+  /* INTRO CSS END */
+
+  /* ALLIED PRODUCT START */
+  .ap-title {
+    font-size: 22px;
+  }
+
+  /* ALLIED PRODUCT END */
+
+  /* CHOOSE US START */
+
+  .cp-con .cp-title,
+  .cp-con .cp-sub-title {
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .cp-con .cp-des {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  /* CHOOSE US END */
+
+  /* GET IN TOUCH START */
+  .get-touch-wrapper {
+    padding: 50px 0px 50px 0px;
+    background-color: #1B1B1B;
+  }
+
+  /* GET IN TOUCH END */
+
+  /* FOOTER CSS START */
+  .fgt-title-con .fgt-title {
+    font-size: 20px;
+  }
+
+  .footer-list .footer-list-item {
+    padding: 4px 0;
+  }
+
+  .footer-list .footer-link-item {
+    font-size: 14px;
+  }
+
+  .fgt-title-con span {
+    font-size: 14px;
+  }
+
+  .brand-social-link .social-info a {
+    padding: 8px;
+  }
+
+  /* FOOTER CSS END */
+  /* HOME END */
+
+  /* ABOUT START */
+  .ind-title-con .ind-title,
+  .ind-title-con .ind-chs,
+  .adp-title-con .adp-title,
+  .adp-title-con .adp-title span {
+    font-size: 20px;
+  }
+
+  /* ABOUT END */
+
+  /* APPLICATION START */
+  .fd-title-con .fd-title {
+    font-size: 36px;
+  }
+
+  .fd-title-con .fd-title span {
+    font-size: 24px;
+  }
+
+  .con-right {
+    padding: 20px;
+    right: 15px;
+    left: 15px;
+  }
+
+
+  .con-right .con-des {
+    font-size: 12px;
+  }
+
+  .con-user {
+    font-size: 18px;
+  }
+
+  /* APPLICATION END */
+
+  .packaging-title-con .packaging-title,
+  .packaging-title-con .storage-title,
+  .packaging-title-con .storage-title span {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 382.98px) {
+  .con-right {
+    top: 40%;
+  }
+
+  .top-info-nav .social-respon-row {
+    display: none !important;
+  }
+}
+
+@media (max-width: 320.98px) {
+
+  /* HOME START */
+  /* HEADER CSS START */
+  .custom-nav {
+    top: 64px;
+  }
+
+  /* HEADER CSS END */
+  /* HERO CSS START */
+  .main_section_wrapper {
+    margin-top: 124px;
+  }
+
+  /* HERO CSS END */
+
+  /* INTRO CSS START */
+  .intro-title {
+    font-size: 24px;
+  }
+
+  .intro-sub-title,
+  .mn-title-con .mn-title {
+    font-size: 20px;
+  }
+
+  .intro-about-des {
+    font-size: 16px;
+  }
+
+  .intro-sub {
+    font-size: 20px;
+  }
+
+  /* INTRO CSS END */
+
+  .con-right {
+    top: 25%;
+    overflow-y: auto;
+  }
+
+  /* HOME END */
+}

@@ -1,0 +1,10 @@
+asgiref
+bleach
+Django
+djangorestframework
+pillow
+pytz
+six
+sqlparse
+typing_extensions
+webencodings

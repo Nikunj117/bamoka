@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fast Hydration</title>
+  <link href="{% static 'assets/bootstrap-dist/bootstrap.min.css' %}" rel="stylesheet" />
+
+  <link href="{% static 'assets/css/fonts.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- TOP-NAV-INFO START -->
+  <div class="container-fluid top-info-nav fixed-top">
+    <div class="d-flex gap-2 gap-sm-5 justify-content-center respon-row">
+      <div class="contact-info d-flex align-items-center gap-2 gap-sm-3">
+        <span class="contact-number">
+          <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+            stroke-linejoin="round" class="phone-icon" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          +91 94261 05559</span>
+        <span class="contact-divider"></span>
+        <span class="contact-email">
+          <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" class="email-icon"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+            </path>
+          </svg>
+          bamokamnc@gmail.com</span>
+      </div>
+
+      <div class="social-info social-respon-row d-flex align-items-center gap-2 gap-sm-4">
+        <a class="facebook-icon" href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+            </path>
+          </svg>
+        </a>
+
+        <a class="twitter-icon" href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+            </path>
+          </svg>
+        </a>
+
+        <a class="instagram-icon" href="https://www.instagram.com/bamoka_?igsh=aHJobDJjaGw4djN0" target="_blank" aria-label="Instagram">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- TOP-NAV-INFO END -->
+
+  <div class="hom-main-wrapper">
+    <!-- HEADER START -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-lg custom-nav">
+      <div class="container">
+        <div class="nav-info">
+          <a class="navbar-brand" href="#">
+            <img src="{% static 'assets/images/navbar/nav-brand.png' %}" alt="brand-logo" />
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse nav-right-item justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 pt-4 pt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item dropdown product-sub-menu">
+              <a class="nav-link dropdown-toggle active" href="/product">Products</a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/fastHydrationproduct">Fast Hydration</a></li>
+                <li><a class="dropdown-item" href="/industrialgradeproduct">Industrial Grade</a></li>
+                <li><a class="dropdown-item" href="/foodgradeproduct">Food Grade</a></li>
+                <li><a class="dropdown-item" href="/churiproduct">Churi</a></li>
+                <li><a class="dropdown-item" href="/kormaproduct">Korma</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/applcation">Applications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/packagingstorage">Packaging & Storage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/qualitycontrol">Quality Control</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+
+          <div class="position-relative d-flex gap-2">
+            <!-- Search Icon -->
+            <div class="search-container">
+              <button class="search-btn" id="search-toggle">
+                <svg stroke="#424242" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="18px"
+                  width="18px" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M456.69 421.39 362.6 327.3a173.81 173.81 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3zM97.92 222.72a124.8 124.8 0 1 1 124.8 124.8 124.95 124.95 0 0 1-124.8-124.8z">
+                  </path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Search Input (hidden by default) -->
+            <div class="search-input-container collapse" id="searchInput">
+              <input type="text" class="form-control" placeholder="Search..." />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER END -->
+
+    <!-- MAIN SECTION START -->
+    <div class="main_section_wrapper h-100">
+      <div class="main_section_wrapp h-100">
+        <!-- HERO SECTION START -->
+        <div class="hero_wrapper d-flex justify-content-center align-items-center h-100">
+          <div class="container">
+            <div class="hero-content-wrapp text-center">
+              <h1 class="hero-title">
+                Fast Hydration </br>
+                Guar Gum
+              </h1>
+            </div>
+          </div>
+        </div>
+        <!-- HERO SECTION END -->
+
+        <!-- INTRO SECTION START -->
+        <section class="intro_warpper pb-0">
+          <div class="container">
+            <div class="intro_wrapp">
+              <div class="row align-items-center">
+                <div class="col-md-6 pe-lg-5 mb-4 mb-md-0">
+                  <div class="intro-continer">
+                    <div class="intro-title-conatiner">
+                      <h5 class="intro-title">
+                        High Grade Guar
+                        Gum Powder
+                      </h5>
+                    </div>
+
+                    <div class="intro-description-container">
+                      <p class="intro-des">
+                        We also deal in Fast Hydration Guar Gum that is specially modified to hydrate quickly
+                        and easily in water. It's like regular guar gum, but it dissolves in water in just a few
+                        minutes, instead of hours. It is natural and water-soluble. Alternate names for it is
+                        quick hydration guar gum, rapid hydration guar gum, high hydration guar gum.It is
+                        a versatile ingredient and can be used in a wide variety of industries such as food,
+                        pharmaceuticals, etc.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 px-lg-5">
+                  <div class="intro-img-conatienr h-100">
+                    <img src="{% static 'assets/images/application/e7824ed151.jpeg' %}" class="intro-img h-100 object-fit-cover"
+                      alt="intro-img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- INTRO SECTION END -->
+
+        <!-- ADVANTAGES OF PRODUCT START -->
+        <section class="adp_wrapper pt-3 pt-md-5">
+          <div class="container">
+            <div class="adp_wrapp">
+              <div class="adp-title-con mb-3">
+                <h5 class="adp-title">Fast Hydration <span>Guar Gum's Advantages:</span></h5>
+              </div>
+
+              <div class="adp-list ps-3">
+                <ul>
+                  <li class="adp-item fw-semibold">Faster Dispersion:
+                    <span class="fw-normal">
+                      Forget about waiting for the guar gum to completely dissolve. Guar gum that dissolves rapidly and
+                      thoroughly thanks to fast hydration
+                      reduces processing time and increases efficiency.
+                    </span>
+                  </li>
+                  <li class="adp-item fw-semibold">Decreased Use of Energy:
+                    <span class="fw-normal">
+                      There's no need for continuous stirring or heating anymore. Guar gum that hydrates quickly uses
+                      less energy, which reduces costs and improves sustainability.
+                    </span>
+                  </li>
+                  <li class="adp-item fw-semibold">Better Consistency:
+                    <span class="fw-normal">
+                      Quick and thorough hydration guarantees uniform consistency and texture in the finished product,
+                      removing the possibility of lumps or unequal spreading
+                    </span>
+                  </li>
+                  <li class="adp-item fw-semibold">Versatility:
+                    <span class="fw-normal">
+                      Fast hydration guar gum works well in a variety of temperatures and conditions, so it may be used
+                      in many situations.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ADVANTAGES OF PRODUCT END -->
+
+
+        <!-- APPLICATION FAST HYDRATION START -->
+        <section class="pro_space_wrapper py-5">
+          <div class="container">
+            <div class="adp-title-con mb-4">
+              <h5 class="adp-title">Applications of Fast Hydration <span>Guar Gum: </span></h5>
+            </div>
+
+            <div class="pro_space_wrapp pro-space-table overflow-hidden mb-4">
+              <table class="table table-bordered mb-0">
+                <tbody class="pro-space-tbody fy-tbody">
+                  <tr>
+                    <td>Application</td>
+                    <td>Function</td>
+                  </tr>
+                  <tr>
+                    <td>Fracturing & Hydraulic Fracturing</td>
+                    <td>Thickens fluids to carry sand and open fractures in rock formations.</td>
+                  </tr>
+                  <tr>
+                    <td>Drilling Muds</td>
+                    <td>Provides viscosity and lubricity, controlling well pressure.</td>
+                  </tr>
+                  <tr>
+                    <td>Cementing</td>
+                    <td>Thickens cement slurry to prevent premature setting and ensure proper placement around the
+                      wellbore casing.</td>
+                  </tr>
+                  <tr>
+                    <td>Completion Fluids</td>
+                    <td>Provides viscosity and fluid loss control during well completion operations.</td>
+                  </tr>
+                  <tr>
+                    <td>Hydraulic Applications</td>
+                    <td>Thickens hydraulic fluids used in machinery and equipment and enhances performance.</td>
+                  </tr>
+                  <tr>
+                    <td>Petrochemical</td>
+                    <td>Used in various petrochemical processes as a thickener, emulsifier, and binder.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <!-- APPLICATION FAST HYDRATION END -->
+
+        <!-- PRODUCT SPACIFICATION START -->
+        <section class="pro_space_wrapper">
+          <div class="container">
+            <div class="adp-title-con mb-4">
+              <h5 class="adp-title">Product <span>Specifications </span></h5>
+            </div>
+
+            <div class="pro_space_wrapp pro-space-table overflow-x-auto text-center mb-4">
+              <table class="table table-bordered mb-0">
+                <thead>
+                  <tr>
+                    <th scope="col">Parameters</th>
+                    <th scope="col">BAMOKA -FH3038</th>
+                    <th scope="col">BAMOKA -FH3540</th>
+                    <th scope="col">BAMOKA -FH3743</th>
+                    <th scope="col">BAMOKA -FH4045</th>
+                    <th scope="col">BAMOKA -7000FF</th>
+                    <th scope="col">BAMOKA -4045FF</th>
+                  </tr>
+                </thead>
+                <tbody class="pro-space-tbody fy-tbody">
+                  <tr>
+                    <td>3 Minutes</td>
+                    <td>30 cps</td>
+                    <td>35 cps</td>
+                    <td>37 cps</td>
+                    <td>40 cps</td>
+                    <td>37 cps</td>
+                    <td>40 cps</td>
+                  </tr>
+
+                  <tr>
+                    <td>5 Minutes</td>
+                    <td>33 cps</td>
+                    <td>37 cps</td>
+                    <td>39 cps</td>
+                    <td>42 cps</td>
+                    <td>40 cps</td>
+                    <td>42 cps</td>
+                  </tr>
+
+                  <tr>
+                    <td>1 Hour</td>
+                    <td>38 cps</td>
+                    <td>40 cps</td>
+                    <td>43 cps</td>
+                    <td>45 cps</td>
+                    <td>42 cps</td>
+                    <td>45 cps</td>
+                  </tr>
+
+                  <tr>
+                    <td>Angle of Repose</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>38° Max.</td>
+                    <td>38° Max.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <!-- PRODUCT SPACIFICATION END -->
+
+        <!-- PRODUCT PACKING START -->
+        <section class="pack_wrapper pt-4 pb-5">
+          <div class="container">
+            <div class="adp-title-con mb-4">
+              <h5 class="adp-title">Packing: </h5>
+            </div>
+
+            <div class="row">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="pack-item-box">
+                  <img src="{% static 'assets/images/packaging/fast-hydration/packing-box.png' %}" class="w-100 rounded-4"
+                    alt="packing">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="pack-item-box">
+                  <img src="{% static 'assets/images/packaging/fast-hydration/packing-bag.png' %}" class="w-100 rounded-4"
+                    alt="packing">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PRODUCT PACKING END -->
+
+        <!-- INFO PRODUCT PACKING START -->
+        <section class="pro_space_wrapper">
+          <div class="container">
+            <div class="adp-title-con mb-4">
+              <h5 class="adp-title">You can check the details of our Packing</h5>
+            </div>
+
+            <div class="pro_space_wrapp pro-space-table overflow-x-auto mb-4 text-center">
+              <table class="table table-bordered mb-0">
+                <h5 class="stufffing-ship">Container Stuffing and Shipment</h5>
+                <thead>
+                  <tr>
+                    <th scope="col">Parameters</th>
+                    <th scope="col">BAMOKA -FH3038</th>
+                    <th scope="col">BAMOKA -FH3540</th>
+                    <th scope="col">BAMOKA -FH3743</th>
+                    <th scope="col">BAMOKA -FH4045</th>
+                    <th scope="col">BAMOKA -7000FF</th>
+                    <th scope="col">BAMOKA -4045FF</th>
+                  </tr>
+                </thead>
+                <tbody class="pro-space-tbody fy-tbody">
+                  <tr>
+                    <td>3 Minutes</td>
+                    <td>30 cps</td>
+                    <td>35 cps</td>
+                    <td>37 cps</td>
+                    <td>40 cps</td>
+                    <td>37 cps</td>
+                    <td>40 cps</td>
+                  </tr>
+
+                  <tr>
+                    <td>5 Minutes</td>
+                    <td>33 cps</td>
+                    <td>37 cps</td>
+                    <td>39 cps</td>
+                    <td>42 cps</td>
+                    <td>40 cps</td>
+                    <td>42 cps</td>
+                  </tr>
+
+                  <tr>
+                    <td>1 Hour</td>
+                    <td>38 cps</td>
+                    <td>40 cps</td>
+                    <td>43 cps</td>
+                    <td>45 cps</td>
+                    <td>42 cps</td>
+                    <td>45 cps</td>
+                  </tr>
+
+                  <tr>
+                    <td>Angle of Repose</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>38° Max.</td>
+                    <td>38° Max.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <!-- INFO PRODUCT PACKING END -->
+
+        <!-- FOOTER START -->
+        <footer class="footer_wrapper">
+          <div class="container">
+            <div class="footer_wrapp">
+              <div class="row">
+                <div class="col-12 col-xs-6 col-sm-4 d-flex flex-column justify-content-between mt-sm-0 mt-4">
+                  <div class="brand-footer py-2">
+                    <img src="{% static 'assets/images/footer/footer-brand.png' %}" alt="" />
+                  </div>
+
+                  <!-- <div class="brand-footer-con text-white py-2">
+                    X.....Y.....Z.....
+                  </div> -->
+
+                  <div class="brand-social-link py-2">
+                    <div class="social-info d-flex align-items-center gap-2 gap-sm-4">
+                      <a class="facebook-icon d-flex align-item-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                          </path>
+                        </svg>
+                      </a>
+
+                      <a class="twitter-icon d-flex align-item-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                          </path>
+                        </svg>
+                      </a>
+
+                      <a class="instagram-icon d-flex align-item-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                          </path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-xs-6 col-sm-4 col-md-5 mt-sm-0 mt-4">
+                  <ul class="footer-list">
+                    <li class="footer-list-item">
+                      <a class="footer-link-item" href="/">Home</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-link-item" href="/about">About</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-link-item active" href="/product">Our Products</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-link-item" href="/applcation">Applications</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-link-item" href="/packagingstorage">Packaging & Storage</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-link-item" href="/qualitycontrol">Quality Control</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-link-item" href="/contact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-3 mt-4 mt-sm-0">
+                  <div class="fgt-title-con">
+                    <h5 class="fgt-title text-white mb-3">Get In Touch</h5>
+                    <span class="text-white fw-light mb-3"><span class="fw-bold d-inline-block">Head Office</span> : U1
+                      JD
+                      complex, Aat
+                      Road, Eru, Navsari - 396445</span>
+                    <span class="text-white mb-3"> +91 94261 05559</span>
+                    <a href="mailto:bamokamnc@gmail.com">bamokamnc@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Copyright  -->
+              <div class="row py-5">
+                <div class="col-12 ft-copyright border-top">
+                  <p class="text-white text-center pt-4">
+                    2024 Bamoka Industries. All Rights Reserved
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- FOOTER END -->
+      </div>
+    </div>
+
+    <!-- MAIN SECTION END -->
+  </div>
+
+  <script src="{% static 'assets/js/popper.min.js' %}"></script>
+  <script src="{% static 'assets/js/bootstrap.js' %}"></script>
+  <script src="{% static 'assets/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/js/carausol_slider.js' %}"></script>
+  <script src="{% static 'assets/js/custom.js' %}"></script>
+</body>
+
+</html>
