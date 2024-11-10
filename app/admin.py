@@ -3,7 +3,6 @@ from .models import *
 
 # admin.site.register(Post)
 
-admin.site.register(Appointment)
+admin.site.register(Gettouch)
 admin.site.register(contactus)
-admin.site.register(contactusnew)
 admin.site.register(UserMail)

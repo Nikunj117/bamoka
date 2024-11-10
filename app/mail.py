@@ -22,7 +22,7 @@ class SendWelcomMail():
         body = '''
                 Dear User,
 
-                We are thrilled to welcome you to IGsolar notifications! Thank you for subscribing and choosing to stay updated with our latest news, events, and exclusive offers.
+                We are thrilled to welcome you to BAMOKA notifications! Thank you for subscribing and choosing to stay updated with our latest news, events, and exclusive offers.
                 With this subscription, you'll receive:
 
                 - Timely updates on new content
@@ -36,11 +36,11 @@ class SendWelcomMail():
                 "Thank you for subscribing!"
 
                 Best regards,
-                IGsolar.
+                BAMOKA.
                 '''
 
         message = MIMEText(body)
-        message["Subject"] = 'Welcome to IGsolar Notifications!'
+        message["Subject"] = 'Welcome to BAMOKA Notifications!'
         message["From"] = sender_email
         message["To"] = receiver_email
         message["Date"] = formatdate(localtime=True)

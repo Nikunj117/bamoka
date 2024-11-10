@@ -8,3 +8,4 @@ six
 sqlparse
 typing_extensions
 webencodings
+whitenoise

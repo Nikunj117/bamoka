@@ -29,44 +29,19 @@ class Home(TemplateView):
         return render(request, self.template_name)
     
     def post(self, request):
-       
-        if 'sub_email' in request.POST:
-            sub_email = request.POST.get('sub_email')
+             
+        if 'name' in request.POST and 'email' in request.POST:
+            name = request.POST.get('name')
+            email = request.POST.get('email')
             try:
-                validate_email(sub_email)
-                UserMail.objects.create(email=sub_email)
-                messages.success(request, "Subscription successful.")
+                validate_email(email)
+                comment = request.POST.get('comments', None)
+                if comment != None:
+                    # UserMail.objects.create(email=email)
+                    Gettouch.objects.create(name=name, email=email, comments = comment)
+                    messages.success(request, "Successfully.")
             except ValidationError:
                 messages.error(request, "Invalid email address.")
-        
-        if 'name' in request.POST and 'apo_email' in request.POST:
-            name = request.POST.get('name')
-            email = request.POST.get('apo_email')
-            phone_number = request.POST.get('apo_number')
-            try:
-                  
-                validate_email(email)
-                # service = request.POST.get('service', None)
-                # comment = request.POST.get('comment', None)
-                # company_name = request.POST.get('company_name', None)
-                existing_customer = request.POST.get('existingCustomer', None)
-                enquiry_type = request.POST.get('enquiryType', None)
-                callback_team = request.POST.get('callbackFrom', None)
-                contactusnew.objects.create(fullname=name, email=email, phonenumber = phone_number ,existing_customer=existing_customer, enquiry_type=enquiry_type,callback_team=callback_team)
-                messages.success(request, "Appointment booked successfully.")
-            except ValidationError:
-                messages.error(request, "Invalid email address for appointment.")
-
-            # name = request.POST.get('name')
-            # apo_email = request.POST.get('apo_email')
-            # try:
-            #     validate_email(apo_email)
-            #     service = request.POST.get('service', None)
-            #     comment = request.POST.get('comment', None)
-            #     Appointment.objects.create(fullname=name, email=apo_email, services=service, comments=comment)
-            #     messages.success(request, "Appointment booked successfully.")
-            # except ValidationError:
-            #     messages.error(request, "Invalid email address for appointment.")
         
         return redirect('home')
     
@@ -74,36 +49,24 @@ class ContactView(TemplateView):
     template_name = "contact.html"
 
     def get(self, request):
-        context = {"title":"Contact Us"}
-        return render(request, self.template_name,context)
+        return render(request, self.template_name)
 
     def post(self, request):
-        if 'sub_email' in request.POST:
-            sub_email = request.POST.get('sub_email')
-            try:
-                validate_email(sub_email)
-                UserMail.objects.create(email=sub_email)
-                messages.success(request, "Subscription successful.")
+        
+        if 'firstname' in request.POST and 'lastname' in request.POST and 'contactemail' in request.POST:
+            firstname = request.POST.get('firstname')
+            lastname = request.POST.get('lastname')
+            contactemail = request.POST.get('contactemail')
+            subject = request.POST.get('subject')
+            comments = request.POST.get('comments')
+            privacypollicy = request.POST.get('privacypollicy')
+            try:   
+                validate_email(contactemail)
+                comments = request.POST.get('comments', None)
+                contactus.objects.create(first_name=firstname, last_name=lastname, email=contactemail ,subject=subject, comments=comments,privacy_policy_accepted=privacypollicy)
+                messages.success(request, "Successfully.")
             except ValidationError:
                 messages.error(request, "Invalid email address.")
-        
-        if 'fullname' in request.POST and 'email' in request.POST and 'phone_number' in request.POST:
-            name = request.POST.get('fullname')
-            email = request.POST.get('email')
-            phone_number = request.POST.get('phone_number')
-            try:
-                  
-                validate_email(email)
-                # service = request.POST.get('service', None)
-                # comment = request.POST.get('comment', None)
-                # company_name = request.POST.get('company_name', None)
-                existing_customer = request.POST.get('existingCustomer', None)
-                enquiry_type = request.POST.get('enquiryType', None)
-                callback_team = request.POST.get('callbackFrom', None)
-                contactusnew.objects.create(fullname=name, email=email, phonenumber = phone_number ,existing_customer=existing_customer, enquiry_type=enquiry_type,callback_team=callback_team)
-                messages.success(request, "Appointment booked successfully.")
-            except ValidationError:
-                messages.error(request, "Invalid email address for appointment.")
 
         return redirect('contact')
 
@@ -111,179 +74,116 @@ class AboutUS(TemplateView):
     template_name = "about.html"
 
     def get(self, request):
-        context = {"title":"About Us"}
-        return render(request, self.template_name,context)
+        return render(request, self.template_name)
 
     def post(self, request):
-        if 'sub_email' in request.POST:
-            sub_email = request.POST.get('sub_email')
-            try:
-                validate_email(sub_email)
-                UserMail.objects.create(email=sub_email)
-                messages.success(request, "Subscription successful.")
-            except ValidationError:
-                messages.error(request, "Invalid email address.")
         return redirect('about')
 
 class Applcation(TemplateView):
     template_name = "application.html"
 
     def get(self, request):
-        context = {"title":"Solar Power System"}
-        return render(request, self.template_name,context)
+        return render(request, self.template_name)
 
     def post(self, request):
-        if 'sub_email' in request.POST:
-            sub_email = request.POST.get('sub_email')
+        if 'name' in request.POST and 'email' in request.POST:
+            name = request.POST.get('name')
+            email = request.POST.get('email')
             try:
-                validate_email(sub_email)
-                UserMail.objects.create(email=sub_email)
-                messages.success(request, "Subscription successful.")
+                validate_email(email)
+                comment = request.POST.get('comments', None)
+                if comment != None:
+                    # UserMail.objects.create(email=email)
+                    Gettouch.objects.create(name=name, email=email, comments = comment)
+                    messages.success(request, "Successfully.")
             except ValidationError:
                 messages.error(request, "Invalid email address.")
-        return redirect('solarpowersystem')
+                
+        return redirect('applcation')
     
 class Product(TemplateView):
     template_name = "product.html"
 
     def get(self, request):
-        context = {"title":"Products & Service Details"}
-        return render(request, self.template_name,context)
+        return render(request, self.template_name)
 
     def post(self, request):
-        if 'sub_email' in request.POST:
-            sub_email = request.POST.get('sub_email')
-            try:
-                validate_email(sub_email)
-                UserMail.objects.create(email=sub_email)
-                messages.success(request, "Subscription successful.")
-            except ValidationError:
-                messages.error(request, "Invalid email address.")
-        return redirect('productandservices')
+        return redirect('product')
     
 class ChuriProduct(TemplateView):
     template_name = "churi.html"
 
     def get(self, request):
-        context = {"title":"Victoria Rebate"}
-        return render(request, self.template_name,context)
+        return render(request, self.template_name)
 
     def post(self, request):
-        if 'sub_email' in request.POST:
-            sub_email = request.POST.get('sub_email')
-            try:
-                validate_email(sub_email)
-                UserMail.objects.create(email=sub_email)
-                messages.success(request, "Subscription successful.")
-            except ValidationError:
-                messages.error(request, "Invalid email address.")
-        return redirect('vectoriarebate')
+        return redirect('churiproduct')
 
 class FastHydrationProduct(TemplateView):
     template_name = "fast-hydration.html"
 
     def get(self, request):
-        context = {"title":"Victoria Rebate"}
-        return render(request, self.template_name,context)
+        return render(request, self.template_name)
 
     def post(self, request):
-        if 'sub_email' in request.POST:
-            sub_email = request.POST.get('sub_email')
-            try:
-                validate_email(sub_email)
-                UserMail.objects.create(email=sub_email)
-                messages.success(request, "Subscription successful.")
-            except ValidationError:
-                messages.error(request, "Invalid email address.")
-        return redirect('vectoriarebate')
+        return redirect('fastHydrationproduct')
 
 class FoodGradeProduct(TemplateView):
     template_name = "food-grade.html"
 
     def get(self, request):
-        context = {"title":"Victoria Rebate"}
-        return render(request, self.template_name,context)
+        return render(request, self.template_name)
 
     def post(self, request):
-        if 'sub_email' in request.POST:
-            sub_email = request.POST.get('sub_email')
-            try:
-                validate_email(sub_email)
-                UserMail.objects.create(email=sub_email)
-                messages.success(request, "Subscription successful.")
-            except ValidationError:
-                messages.error(request, "Invalid email address.")
-        return redirect('vectoriarebate')
+        return redirect('foodgradeproduct')
 
 class IndustrialGradeProduct(TemplateView):
     template_name = "industrial-grade.html"
 
     def get(self, request):
-        context = {"title":"Victoria Rebate"}
-        return render(request, self.template_name,context)
+        return render(request, self.template_name)
 
     def post(self, request):
-        if 'sub_email' in request.POST:
-            sub_email = request.POST.get('sub_email')
-            try:
-                validate_email(sub_email)
-                UserMail.objects.create(email=sub_email)
-                messages.success(request, "Subscription successful.")
-            except ValidationError:
-                messages.error(request, "Invalid email address.")
-        return redirect('vectoriarebate')
+        return redirect('industrialgradeproduct')
 
 class KormaProduct(TemplateView):
     template_name = "korma.html"
 
     def get(self, request):
-        context = {"title":"Victoria Rebate"}
-        return render(request, self.template_name,context)
+        return render(request, self.template_name)
 
     def post(self, request):
-        if 'sub_email' in request.POST:
-            sub_email = request.POST.get('sub_email')
-            try:
-                validate_email(sub_email)
-                UserMail.objects.create(email=sub_email)
-                messages.success(request, "Subscription successful.")
-            except ValidationError:
-                messages.error(request, "Invalid email address.")
-        return redirect('vectoriarebate')
+        return redirect('kormaproduct')
 
 class PackagingStorage(TemplateView):
     template_name = "packaging-storage.html"
 
     def get(self, request):
-        context = {"title":"Victoria Rebate"}
-        return render(request, self.template_name,context)
+        return render(request, self.template_name)
 
     def post(self, request):
-        if 'sub_email' in request.POST:
-            sub_email = request.POST.get('sub_email')
-            try:
-                validate_email(sub_email)
-                UserMail.objects.create(email=sub_email)
-                messages.success(request, "Subscription successful.")
-            except ValidationError:
-                messages.error(request, "Invalid email address.")
-        return redirect('blog')
+        return redirect('packagingstorage')
 
 class QualityControl(TemplateView):
     template_name = "quality-control.html"
 
     def get(self, request):
-        context = {"title":"Knowledge Center"}
-        return render(request, self.template_name,context)
+        return render(request, self.template_name)
 
     def post(self, request):
-        if 'sub_email' in request.POST:
-            sub_email = request.POST.get('sub_email')
+        if 'name' in request.POST and 'email' in request.POST:
+            name = request.POST.get('name')
+            email = request.POST.get('email')
             try:
-                validate_email(sub_email)
-                UserMail.objects.create(email=sub_email)
-                messages.success(request, "Subscription successful.")
+                  
+                validate_email(email)
+                comment = request.POST.get('comments', None)
+                if comment != None:
+                    # UserMail.objects.create(email=email)
+                    Gettouch.objects.create(name=name, email=email, comments = comment)
+                    messages.success(request, "Successfully.")
             except ValidationError:
                 messages.error(request, "Invalid email address.")
-        return redirect('knowledgecenter')
+
+        return redirect('qualitycontrol')
 
