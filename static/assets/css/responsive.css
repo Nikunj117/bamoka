@@ -127,6 +127,10 @@
     font-size: 34px;
   }
 
+  .intro-des {
+    text-align: left;
+  }
+
   /* ABOUT END */
   .packaging-title-con .packaging-title,
   .packaging-title-con .storage-title,
@@ -162,7 +166,8 @@
   .contact-email .email-icon,
   .social-info .facebook-icon svg,
   .social-info .twitter-icon svg,
-  .social-info .instagram-icon svg {
+  .social-info .instagram-icon svg,
+  .social-info .linkedin-icon svg {
     width: 18px;
     height: 18px;
   }
@@ -259,6 +264,18 @@
   }
 
   /* APPLICATION END */
+
+  .footer-info-icon {
+    font-size: 12px;
+  }
+
+  .footer-info-icon svg {
+    width: 20px;
+  }
+
+  .intro-title.indud-title {
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -274,7 +291,8 @@
   .contact-email .email-icon,
   .social-info .facebook-icon svg,
   .social-info .twitter-icon svg,
-  .social-info .instagram-icon svg {
+  .social-info .instagram-icon svg,
+  .social-info .linkedin-icon svg {
     width: 16px !important;
     height: 16px !important;
   }
@@ -283,7 +301,7 @@
 
   /* HEADER CSS START */
   .custom-nav {
-    top: 49px;
+    top: 46px;
   }
 
   /* HEADER CSS END */
@@ -383,13 +401,22 @@
   .packaging-title-con .storage-title span {
     font-size: 28px;
   }
+
+  .brand-wrapp .brand-item {
+    width: auto !important;
+    height: auto !important;
+  }
+
+  #brandSlider .owl-stage-outer .owl-stage {
+    align-items: center;
+  }
 }
 
 @media (max-width: 575.98px) {
 
   /* HOME START */
   /* TOP INFO NAV CSS START */
-  .contact-info span {
+  .contact-info a {
     font-size: 12px !important;
   }
 
@@ -397,7 +424,8 @@
   .contact-email .email-icon,
   .social-info .facebook-icon svg,
   .social-info .twitter-icon svg,
-  .social-info .instagram-icon svg {
+  .social-info .instagram-icon svg,
+  .social-info .linkedin-icon svg {
     width: 14px !important;
     height: 14px !important;
   }
@@ -498,6 +526,11 @@
     padding: 8px;
   }
 
+  .footer-info-icon svg {
+    width: 20px;
+    margin-right: 8px;
+  }
+
   /* FOOTER CSS END */
   /* HOME END */
 
@@ -542,15 +575,21 @@
   .packaging-title-con .storage-title span {
     font-size: 24px;
   }
+
+  .intro-title.indud-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 404.98px) {
+  .top-info-nav .social-respon-row {
+    display: none !important;
+  }
 }
 
 @media (max-width: 382.98px) {
   .con-right {
     top: 40%;
-  }
-
-  .top-info-nav .social-respon-row {
-    display: none !important;
   }
 }
 

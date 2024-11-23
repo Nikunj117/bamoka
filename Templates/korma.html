@@ -7,13 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Korma</title>
   <link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon">
-  
   <link href="{% static 'assets/bootstrap-dist/bootstrap.min.css' %}" rel="stylesheet" />
 
   <link href="{% static 'assets/css/fonts.css' %}" rel="stylesheet" />
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
   <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet" />
   <link href="{% static 'assets/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/css//animate.css' %}" rel="stylesheet" />
+  <!-- Add Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -21,27 +23,27 @@
   <div class="container-fluid top-info-nav fixed-top">
     <div class="d-flex gap-2 gap-sm-5 justify-content-center respon-row">
       <div class="contact-info d-flex align-items-center gap-2 gap-sm-3">
-        <span class="contact-number">
+        <a class="contact-number" href="tel:+919426105559">
           <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
             stroke-linejoin="round" class="phone-icon" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
             </path>
           </svg>
-          +91 94261 05559</span>
+          +91 94261 05559</a>
         <span class="contact-divider"></span>
-        <span class="contact-email">
+        <a class="contact-email" href="mailto:bamokamnc@gmail.com">
           <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" class="email-icon"
             xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
             </path>
           </svg>
-          bamokamnc@gmail.com</span>
+          bamokamnc@gmail.com</a>
       </div>
 
       <div class="social-info social-respon-row d-flex align-items-center gap-2 gap-sm-4">
-        <a class="facebook-icon" href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <a class="facebook-icon">
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -67,6 +69,15 @@
             </path>
           </svg>
         </a>
+
+       <a class="linkedin-icon" href="https://www.linkedin.com/in/bamoka-industries-a87453322/?originalSubdomain=in" target="_blank" aria-label="Linkedin">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+            </path>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
@@ -89,54 +100,35 @@
         <div class="collapse navbar-collapse nav-right-item justify-content-center" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 pt-4 pt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
+              <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item dropdown product-sub-menu">
-              <a class="nav-link dropdown-toggle active" href="/product">Products</a>
-
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/fastHydrationproduct">Fast Hydration</a></li>
-                <li><a class="dropdown-item" href="/industrialgradeproduct">Industrial Grade</a></li>
-                <li><a class="dropdown-item" href="/foodgradeproduct">Food Grade</a></li>
-                <li><a class="dropdown-item" href="/churiproduct">Churi</a></li>
-                <li><a class="dropdown-item" href="/kormaproduct">Korma</a></li>
+              <span class="nav-link dropdown-toggle active">Products</span>
+              <ul class="dropdown-menu text-uppercase">
+                <li><a class="dropdown-item" href="split-guar-gum.html">guar gum split</a></li>
+                <li><a class="dropdown-item" href="fast-hydration.html">Fast Hydration Guar Gum</a></li>
+                <li><a class="dropdown-item" href="industrial-grade.html">Industrial Grade Guar Gum</a></li>
+                <li><a class="dropdown-item" href="food-grade.html">Food Grade Guar Gum</a></li>
+                <li><a class="dropdown-item" href="churi.html">Guar Gum Churi</a></li>
+                <li><a class="dropdown-item" href="korma.html">Guar Gum Korama</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/applcation">Applications</a>
+              <a class="nav-link" href="application.html">Applications</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/packagingstorage">Packaging & Storage</a>
+              <a class="nav-link" href="packaging-storage.html">Packaging & Storage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/qualitycontrol">Quality Control</a>
+              <a class="nav-link" href="quality-control.html">Quality Control</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-
-          <div class="position-relative d-flex gap-2">
-            <!-- Search Icon -->
-            <div class="search-container">
-              <button class="search-btn" id="search-toggle">
-                <svg stroke="#424242" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="18px"
-                  width="18px" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M456.69 421.39 362.6 327.3a173.81 173.81 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3zM97.92 222.72a124.8 124.8 0 1 1 124.8 124.8 124.95 124.95 0 0 1-124.8-124.8z">
-                  </path>
-                </svg>
-              </button>
-            </div>
-
-            <!-- Search Input (hidden by default) -->
-            <div class="search-input-container collapse" id="searchInput">
-              <input type="text" class="form-control" placeholder="Search..." />
-            </div>
-          </div>
         </div>
       </div>
     </nav>
@@ -150,7 +142,7 @@
         <div class="hero_wrapper d-flex justify-content-center align-items-center h-100">
           <div class="container">
             <div class="hero-content-wrapp text-center">
-              <h1 class="hero-title">
+              <h1 class="hero-title wow animate__fadeInUp" data-wow-delay="0.2s">
                 Guar Gum Korma
               </h1>
             </div>
@@ -166,16 +158,16 @@
                 <div class="col-md-6 pe-lg-5 mb-4 mb-md-0">
                   <div class="intro-continer">
                     <div class="intro-title-conatiner">
-                      <h5 class="intro-title indud-title">
+                      <h5 class="intro-title indud-title wow fadeInLeft" data-wow-delay="0.3s">
                         Guar Gum Korma
                       </h5>
-                      <span class="intro-sub-title d-inline-block">
+                      <span class="intro-sub-title d-inline-block wow fadeInLeft" data-wow-delay="0.5s">
                         Product Info
                       </span>
                     </div>
 
                     <div class="intro-description-container">
-                      <p class="intro-des">
+                      <p class="intro-des wow fadeInUp" data-wow-delay="0.7s">
                         The animal feed industry is seeing an increase in demand for guar gum korma, a high-
                         protein feed ingredient. Guar Gum Korma is a byproduct of processing guar seeds.
                         It is especially appropriate for feed formulations such as pork products, poultry, and
@@ -189,7 +181,7 @@
                 <div class="col-md-6 px-lg-5">
                   <div class="intro-img-conatienr h-100">
                     <img src="{% static 'assets/images/packaging/fast-hydration/korma-intro.png' %}"
-                      class="intro-img h-100 object-fit-cover" alt="intro-img" />
+                      class="intro-img h-100 object-fit-cover wow fadeInRight" data-wow-delay="0.5s" alt="intro-img" />
                   </div>
                 </div>
               </div>
@@ -202,33 +194,33 @@
         <section class="adp_wrapper pt-3 pt-md-5">
           <div class="container">
             <div class="adp_wrapp">
-              <div class="adp-title-con mb-3">
+              <div class="adp-title-con mb-3 wow fadeInUp" data-wow-delay="0.3s">
                 <h5 class="adp-title">Benefits of <span>Guar Gum Korma:</span></h5>
               </div>
 
-              <div class="adp-list ps-3">
+              <div class="adp-list ps-3 wow fadeInUp" data-wow-delay="0.5s">
                 <ul>
-                  <li class="adp-item fw-semibold">
+                  <li class="adp-item fw-semibold wow fadeInUp" data-wow-delay="0.7s">
                     High Protein Content:
                     <span class="fw-normal">
                       Protein is necessary for animal growth, maintenance, and reproduction. Guar korma meal is a rich
                       source of protein.
                     </span>
                   </li>
-                  <li class="adp-item fw-semibold">
+                  <li class="adp-item fw-semibold wow fadeInUp" data-wow-delay="0.9s">
                     Appetizing:
                     <span class="fw-normal">
                       Because guar korma meal has a nice flavor and aroma, animals enjoy eating it.
                     </span>
                   </li>
-                  <li class="adp-item fw-semibold">
+                  <li class="adp-item fw-semibold wow fadeInUp" data-wow-delay="1.1s">
                     Digestibility:
                     <span class="fw-normal">
                       Animals can effectively absorb the nutrients in guar korma meal due to its excellent
                       digestibility.
                     </span>
                   </li>
-                  <li class="adp-item fw-semibold">
+                  <li class="adp-item fw-semibold wow fadeInUp" data-wow-delay="1.3s">
                     Cost-effectiveness:
                     <span class="fw-normal">
                       When compared to other protein sources, guar korma meal is a reasonably priced feed item.
@@ -243,41 +235,41 @@
         <section class="adp_wrapper pt-3 pt-md-5">
           <div class="container">
             <div class="adp_wrapp">
-              <div class="adp-title-con mb-3">
+              <div class="adp-title-con mb-3 wow fadeInUp" data-wow-delay="0.3s">
                 <h5 class="adp-title">Applications of <span>Guar Gum Korma:</span></h5>
               </div>
 
-              <div class="adp-list ps-3">
+              <div class="adp-list ps-3 wow fadeInUp" data-wow-delay="0.5s">
                 <ul>
-                  <li class="adp-item fw-semibold">
+                  <li class="adp-item fw-semibold wow fadeInUp" data-wow-delay="0.7s">
                     Pet Food:
                     <span class="fw-normal">
                       Guar Meal Korma is highly used in dry pet food, wet pet food, and treaties to provide a high
                       source of protein and fiber.
                     </span>
                   </li>
-                  <li class="adp-item fw-semibold">
+                  <li class="adp-item fw-semibold wow fadeInUp" data-wow-delay="0.9s">
                     Cattle Feed:
                     <span class="fw-normal">
                       Especially in beef and dairy cattle feed, guar meal korma is an excellent source of protein for
                       cattle.
                     </span>
                   </li>
-                  <li class="adp-item fw-semibold">
+                  <li class="adp-item fw-semibold wow fadeInUp" data-wow-delay="1.1s">
                     Poultry(Chicken) Feed:
                     <span class="fw-normal">
                       To increase feed efficiency and supply necessary amino acids, guar meal korma is added to chicken
                       feed.
                     </span>
                   </li>
-                  <li class="adp-item fw-semibold">
+                  <li class="adp-item fw-semibold wow fadeInUp" data-wow-delay="1.3s">
                     Fish Feed:
                     <span class="fw-normal">
                       Guar Meal Korma is widely used in various fish feed formulations, offering several benefits for
                       fish nutrition and overall health.
                     </span>
                   </li>
-                  <li class="adp-item fw-semibold">
+                  <li class="adp-item fw-semibold wow fadeInUp" data-wow-delay="1.5s">
                     Swine(Pig) Feed:
                     <span class="fw-normal">
                       To improve growth performance and carcass quality, guar meal korma is also added to swine feed.
@@ -292,41 +284,40 @@
         <section class="adp_wrapper pt-3 pt-md-5">
           <div class="container">
             <div class="adp_wrapp">
-              <div class="adp-title-con mb-3">
+              <div class="adp-title-con mb-3 wow fadeInUp" data-wow-delay="0.3s">
                 <h5 class="adp-title">Outside of Animal Feed: <span>Uses for Guar Gum Korma</span></h5>
               </div>
 
-              <div class="adp-list ps-3">
+              <div class="adp-list ps-3 wow fadeInUp" data-wow-delay="0.5s">
                 <ul>
-                  <li class="adp-item fw-semibold">
+                  <li class="adp-item fw-semibold wow fadeInUp" data-wow-delay="0.7s">
                     Bioplastics:
                     <span class="fw-normal">
                       By using the binding qualities of guar korma, biodegradable and environmentally friendly
-                      bioplastics may be produced, which lessens the
-                      need for fossil fuels and plastic trash.
+                      bioplastics may be produced, which lessens the need for fossil fuels and plastic trash.
                     </span>
                   </li>
-                  <li class="adp-item fw-semibold">
+                  <li class="adp-item fw-semibold wow fadeInUp" data-wow-delay="0.9s">
                     Amendment to Soil:
                     <span class="fw-normal">
                       Guar korma is a sustainable fertilizer alternative for agriculture because of its high nitrogen
-                      and organic matter content, which
-                      can improve soil retention, nourish the soil, and encourage plant development.
+                      and organic matter content, which can improve soil retention, nourish the soil, and encourage
+                      plant
+                      development.
                     </span>
                   </li>
-                  <li class="adp-item fw-semibold">
+                  <li class="adp-item fw-semibold wow fadeInUp" data-wow-delay="1.1s">
                     Biofuel Production:
                     <span class="fw-normal">
                       Guar korma is a renewable energy source with a low environmental effect that can be utilized as
                       raw materials for biofuel production.
                     </span>
                   </li>
-                  <li class="adp-item fw-semibold">
+                  <li class="adp-item fw-semibold wow fadeInUp" data-wow-delay="1.3s">
                     Food Additive:
                     <span class="fw-normal">
                       Studies are being conducted to see whether guar korma can serve as a natural thickening and
-                      stabilizing agent in food items, possibly
-                      taking the place of artificial additives.
+                      stabilizing agent in food items, possibly taking the place of artificial additives.
                     </span>
                   </li>
                 </ul>
@@ -336,132 +327,194 @@
         </section>
         <!-- ADVANTAGES OF PRODUCT END -->
 
-        <!-- PRODUCT SPACIFICATION START -->
-        <section class="pro_space_wrapper py-5">
+        <section class="pro_space_wrapper pb-5 wow animate__fadeInUp" data-wow-duration="1s">
           <div class="container">
-            <div class="adp-title-con mb-4">
-              <h5 class="adp-title">Nutritional <span>Specifications </span></h5>
+            <div class="adp-title-con mb-4 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <h5 class="adp-title">Korma <span>Guar Gum: </span></h5>
             </div>
 
-            <div class="pro_space_wrapp pro-space-table overflow-x-auto mb-4">
-              <table class="table table-bordered mb-0">
-                <tbody class="pro-space-tbody">
-                  <tr>
-                    <td>Protein</td>
-                    <td>Pale-white</td>
-                  </tr>
+            <div>
+              <ul class="nav nav-pills mb-3 gap-2" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link product_reviews_tab active" id="pills-regulatory-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-regulatory" type="button" role="tab" aria-controls="pills-regulatory"
+                    aria-selected="false">REGULATORY INFORMATION</button>
+                </li>
 
-                  <tr>
-                    <td>Carbohydrates</td>
-                    <td>45%</td>
-                  </tr>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link product_reviews_tab" id="pills-specification-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-specification" type="button" role="tab" aria-controls="pills-specification"
+                    aria-selected="false">SPECIFICATION</button>
+                </li>
 
-                  <tr>
-                    <td>Fat</td>
-                    <td>40%</td>
-                  </tr>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link product_reviews_tab" id="pills-physical-chemical-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-physical-chemical" type="button" role="tab"
+                    aria-controls="pills-physical-chemical" aria-selected="false">PHYSICAL & CHEMICAL</button>
+                </li>
+              </ul>
 
-                  <tr>
-                    <td>Fiber</td>
-                    <td>4%</td>
-                  </tr>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-regulatory" role="tabpanel"
+                  aria-labelledby="pills-regulatory-tab" tabindex="0">
+                  <div class="pro_space_wrapp pro-space-table overflow-hidden mb-4 shadow-none">
+                    <p class="fw-bolder">
+                      The animal feed industry is seeing an increase in demand for guar meal korma, a high-protein feed
+                      ingredient. Guar Meal Korma is a byproduct of processing guar seeds. It is especially appropriate
+                      for feed formulations such as pork products, poultry, and cattle. Because guar korma is high in
+                      fiber, protein, and carbs, it is considered to be an affordable and wholesome substitute for other
+                      feed ingredients.
+                    </p>
+                  </div>
+                </div>
 
-                  <tr>
-                    <td>Moisture</td>
-                    <td>8%</td>
-                  </tr>
+                <div class="tab-pane fade" id="pills-specification" role="tabpanel"
+                  aria-labelledby="pills-specification-tab" tabindex="0">
+                  <div class="pro_space_wrapp pro-space-table overflow-hidden mb-4">
+                    <table class="table table-bordered mb-0">
+                      <tbody class="pro-space-tbody fy-tbody text-center">
+                        <tr>
+                          <td colspan="2" style="background-color: #548410;" class="text-white">Guar Meal Korma</td>
+                        </tr>
 
-                  <tr>
-                    <td>Protein</td>
-                    <td>8%</td>
-                  </tr>
+                        <tr>
+                          <td>Protein</td>
+                          <td>48-50%</td>
+                        </tr>
 
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-        <!-- PRODUCT SPACIFICATION END -->
+                        <tr>
+                          <td>Carbohydrates</td>
+                          <td>40%</td>
+                        </tr>
 
-        <!-- PRODUCT PACKING START -->
-        <section class="pack_wrapper pb-5">
-          <div class="container">
-            <div class="adp-title-con mb-4">
-              <h5 class="adp-title">Packing: </h5>
-            </div>
+                        <tr>
+                          <td>Oil</td>
+                          <td>3-5%</td>
+                        </tr>
 
-            <div class="row">
-              <div class="col-6 col-md-4 col-lg-3">
-                <div class="pack-item-box">
-                  <img src="{% static 'assets/images/packaging/fast-hydration/packing-box.png' %}" class="w-100 rounded-4"
-                    alt="packing">
+                        <tr>
+                          <td>Fiber</td>
+                          <td>5-8%</td>
+                        </tr>
+
+                        <tr>
+                          <td>Moisture</td>
+                          <td>8% MAX</td>
+                        </tr>
+
+                        <tr>
+                          <td>Afflatoxin</td>
+                          <td>
+                            < 20 pcb </td>
+                        </tr>
+
+                        <tr>
+                          <td>Color</td>
+                          <td>Greenish Brown</td>
+                        </tr>
+
+                        <tr>
+                          <td>Energy</td>
+                          <td>3000 -3500 Kcal/100 gm</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="pro_space_wrapp pro-space-table overflow-hidden mb-4">
+                    <table class="table table-bordered mb-0">
+                      <tbody class="pro-space-tbody fy-tbody text-center">
+                        <tr>
+                          <td colspan="2" style="background-color: #548410;" class="text-white">Rosted Guar Meal Korma
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Protein</td>
+                          <td>53-55%</td>
+                        </tr>
+
+                        <tr>
+                          <td>Carbohydrates</td>
+                          <td>40%</td>
+                        </tr>
+
+                        <tr>
+                          <td>Oil</td>
+                          <td>5-7%</td>
+                        </tr>
+
+                        <tr>
+                          <td>Fiber</td>
+                          <td>4-6%</td>
+                        </tr>
+
+                        <tr>
+                          <td>Sand/Silica</td>
+                          <td>
+                            < 2.00%</td>
+                        </tr>
+
+                        <tr>
+                          <td>Moisture</td>
+                          <td>7% MAX</td>
+                        </tr>
+
+                        <tr>
+                          <td>Afflatoxin</td>
+                          <td>
+                            < 20 pcb </td>
+                        </tr>
+
+                        <tr>
+                          <td>Color</td>
+                          <td>Golden Brown</td>
+                        </tr>
+
+                        <tr>
+                          <td>Energy</td>
+                          <td>3600 -4000 Kcal/100 gm</td>
+                        </tr>
+
+                        <tr>
+                          <td>Pepsin Digestibility</td>
+                          <td>UPTO 90%</td>
+                        </tr>
+
+                        <tr>
+                          <td>Urea Activity</td>
+                          <td>
+                            < 1.00%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-physical-chemical" role="tabpanel"
+                  aria-labelledby="pills-physical-chemical-tab" tabindex="0">
+                  <div class="pro_space_wrapp pro-space-table overflow-hidden mb-4">
+                    <table class="table table-bordered mb-0">
+                      <tbody class="pro-space-tbody fy-tbody">
+                        <tr>
+                          <td>Color</td>
+                          <td>Off White</td>
+                        </tr>
+                        <tr>
+                          <td>Moisture</td>
+                          <td>12% Max</td>
+                        </tr>
+                        <tr>
+                          <td>pH</td>
+                          <td>5.00 - 7.5</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
-              <div class="col-6 col-md-4 col-lg-3">
-                <div class="pack-item-box">
-                  <img src="{% static 'assets/images/packaging/fast-hydration/packing-bag.png' %}" class="w-100 rounded-4"
-                    alt="packing">
-                </div>
-              </div>
             </div>
-          </div>
         </section>
-        <!-- PRODUCT PACKING END -->
-
-        <!-- INFO PRODUCT PACKING START -->
-        <section class="pro_space_wrapper">
-          <div class="container">
-            <div class="adp-title-con mb-4">
-              <h5 class="adp-title">You can check the details of our Packing</h5>
-            </div>
-
-            <div class="pro_space_wrapp pro-space-table overflow-x-auto mb-4 text-center">
-              <table class="table table-bordered mb-0">
-                <h5 class="stufffing-ship">Container Stuffing and Shipment</h5>
-                <thead>
-                  <tr>
-                    <th class="text-nowrap" scope="col">Capacity of Each Bag</th>
-                    <th class="text-nowrap" scope="col">Product Description</th>
-                    <th class="text-nowrap" scope="col">1X20 FCL (Palletized)</th>
-                    <th class="text-nowrap" scope="col">1X20 FCL (No. Palletized)</th>
-                  </tr>
-                </thead>
-                <tbody class="pro-space-tbody fy-tbody">
-                  <tr>
-                    <td>25Kg Net</td>
-                    <td>
-                      Brown multiwall 4 ply paper bag inside liner or in brown
-                      Hdpe laminated paper bag with insider liner
-                    </td>
-                    <td>18 M/tons</td>
-                    <td>20 M/tons</td>
-                  </tr>
-
-                  <tr>
-                    <td>25Kg Net</td>
-                    <td>
-                      White multiwall single ply paper bag with inside liner or
-                      in white hdpe laminated paper bag with inside liner
-                    </td>
-                    <td>18 M/tons</td>
-                    <td>20 M/tons</td>
-                  </tr>
-
-                  <tr>
-                    <td>1000Kg Net</td>
-                    <td>
-                      Jumbo Bag (Hdpe Woven Bag)
-                    </td>
-                    <td>19.400M/tons</td>
-                    <td>20 M/tons</td>
-                  </tr>
-
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-        <!-- INFO PRODUCT PACKING END -->
 
         <!-- FOOTER START -->
         <footer class="footer_wrapper">
@@ -472,10 +525,6 @@
                   <div class="brand-footer py-2">
                     <img src="{% static 'assets/images/footer/footer-brand.png' %}" alt="" />
                   </div>
-
-                  <!-- <div class="brand-footer-con text-white py-2">
-                    X.....Y.....Z.....
-                  </div> -->
 
                   <div class="brand-social-link py-2">
                     <div class="social-info d-flex align-items-center gap-2 gap-sm-4">
@@ -505,6 +554,15 @@
                           </path>
                         </svg>
                       </a>
+
+                      <a class="linkedin-icon  d-flex align-item-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                          </path>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -512,25 +570,25 @@
                 <div class="col-12 col-xs-6 col-sm-4 col-md-5 mt-sm-0 mt-4">
                   <ul class="footer-list">
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/">Home</a>
+                      <a class="footer-link-item" href="index.html">Home</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/about">About</a>
+                      <a class="footer-link-item" href="about.html">About Us</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item active" href="/product">Our Products</a>
+                      <a class="footer-link-item active" href="product.html">Our Products</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/applcation">Applications</a>
+                      <a class="footer-link-item" href="application.html">Applications</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/packagingstorage">Packaging & Storage</a>
+                      <a class="footer-link-item" href="packaging-storage.html">Packaging & Storage</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/qualitycontrol">Quality Control</a>
+                      <a class="footer-link-item" href="quality-control.html">Quality Control</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/contact">Contact</a>
+                      <a class="footer-link-item" href="contact.html">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -541,9 +599,34 @@
                     <span class="text-white fw-light mb-3"><span class="fw-bold d-inline-block">Head Office</span> : U1
                       JD
                       complex, Aat
-                      Road, Eru, Navsari - 396445</span>
-                    <span class="text-white mb-3"> +91 94261 05559</span>
-                    <a href="mailto:bamokamnc@gmail.com">bamokamnc@gmail.com</a>
+                      Road, Eru, Navsari - 396445
+                    </span>
+
+                    <span class="mb-3">
+                      <a class="text-white d-flex align-items-center flex-nowrap footer-info-icon"
+                        href="tel:+919426105559">
+                        <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                          stroke-linejoin="round" class="phone-icon" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                          </path>
+                        </svg>
+                        +91 94261 05559
+                      </a>
+                    </span>
+
+                    <span>
+                      <a class="text-white d-flex align-items-center flex-nowrap footer-info-icon"
+                        href="mailto:bamokamnc@gmail.com">
+                        <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"
+                          class="email-icon" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                          </path>
+                        </svg>
+                        bamokamnc@gmail.com
+                      </a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -565,12 +648,13 @@
     <!-- MAIN SECTION END -->
   </div>
 
-  <script src="{% static 'assets/js/popper.min.js' %}"></script>
-  <script src="{% static 'assets/js/bootstrap.js' %}"></script>
-  <script src="{% static 'assets/jquery/jquery.min.js' %}"></script>
-  <script src="{% static 'assets/owl.carousel/owl.carousel.min.js' %}"></script>
-  <script src="{% static 'assets/js/carausol_slider.js' %}"></script>
-  <script src="{% static 'assets/js/custom.js' %}"></script>
+  <script src="{% static 'assets/js/popper.min' %}"></script>
+  <script src="{% static 'assets/js/bootstrap' %}"></script>
+  <script src="{% static 'assets/jquery/jquery.min' %}"></script>
+  <script src="{% static 'assets/owl.carousel/owl.carousel.min' %}"></script>
+  <script src="{% static 'assets/js/carausol_slider' %}"></script>
+  <script src="{% static 'assets/js/custom' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </body>
 
 </html>

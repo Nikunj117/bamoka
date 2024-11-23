@@ -5,6 +5,7 @@
 /* CUSTOM START */
 html {
   -webkit-text-size-adjust: none;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -117,8 +118,10 @@ dd {
   background-color: #3A3A42;
 }
 
-.contact-info span {
+.contact-info a {
   font-size: 14px;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 .contact-number .phone-icon,
@@ -130,7 +133,8 @@ dd {
 
 .social-info .facebook-icon svg,
 .social-info .twitter-icon svg,
-.social-info .instagram-icon svg {
+.social-info .instagram-icon svg,
+.social-info .linkedin-icon svg {
   width: 18px;
   height: 18px;
   cursor: pointer;
@@ -139,8 +143,16 @@ dd {
 
 .social-info .facebook-icon svg:hover,
 .social-info .twitter-icon svg:hover,
-.social-info .instagram-icon svg:hover {
+.social-info .instagram-icon svg:hover,
+.social-info .linkedin-icon svg {
   opacity: 0.8;
+  transition: all 0.4s ease 0s;
+}
+
+.contact-email svg:hover,
+.contact-number svg:hover,
+.footer-info-icon svg:hover {
+  opacity: 0.6;
   transition: all 0.4s ease 0s;
 }
 
@@ -335,36 +347,52 @@ dd {
   font-size: 16px;
 }
 
-/* OWL CSS START */
-#rpSlider .owl-stage-outer .owl-stage {
+/* RP OWL CSS START */
+/* BRAND  OWL CSS START */
+/* PACKAGING OWL CSS STAR */
+#rpSlider .owl-stage-outer .owl-stage,
+#brandSlider .owl-stage-outer .owl-stage,
+#packagingSlider .owl-stage-outer .owl-stage {
   display: flex;
   gap: 1.5rem;
 }
 
 #rpSlider .owl-nav .owl-prev,
-#rpSlider .owl-nav .owl-next {
+#rpSlider .owl-nav .owl-next,
+#brandSlider .owl-nav .owl-prev,
+#brandSlider .owl-nav .owl-next,
+#packagingSlider .owl-nav .owl-prev,
+#packagingSlider .owl-nav .owl-next {
   display: none;
 }
 
-#rpSlider .owl-dots {
+#rpSlider .owl-dots,
+#brandSlider .owl-dots,
+#packagingSlider .owl-dots {
   display: none;
   gap: 3px;
   justify-content: center;
   margin-top: 10px;
 }
 
-#rpSlider .owl-dots .owl-dot {
+#rpSlider .owl-dots .owl-dot,
+#brandSlider .owl-dots .owl-dot,
+#packagingSlider .owl-dots .owl-dot {
   background-color: #3F650A;
   width: 10px;
   height: 10px;
   border-radius: 50%;
 }
 
-#rpSlider .owl-dots .owl-dot.active {
+#rpSlider .owl-dots .owl-dot.active,
+#brandSlider .owl-dots .owl-dot.active,
+#packagingSlider .owl-dots .owl-dot.active {
   background-color: #1B1B1B !important;
 }
 
-/* OWL CSS END */
+/* RP OWL CSS END */
+/* BRAND OWL CSS END */
+/* PACKAGING OWL CSS END */
 
 /* RP SLIDER CSS END */
 
@@ -447,11 +475,19 @@ dd {
 .check-info .check-item {
   width: fit-content;
   border-radius: 10px;
-  border: 1px solid #3F650A;
+  border: 1px solid #e0e0e0;
   padding: 8px 14px;
   font-size: 14px;
   font-weight: 700;
-  background-color: #D8F7DC;
+  background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.check-info .check-item:hover {
+  background: linear-gradient(135deg, #e6f7e6, #cceacc);
+  transform: translateY(-2px);
 }
 
 /* .check-info .check-item:first-child {
@@ -460,7 +496,7 @@ dd {
 
 .item-check-box {
   border-radius: 6px;
-  background-color: #3F650A;
+  background-color: #fff;
   padding: 5px;
   width: 30px;
   height: 30px;
@@ -568,14 +604,17 @@ dd {
   font-weight: 400;
 }
 
-.fgt-title-con a {
-  color: #3F650A;
-  font-size: 18px;
-  font-weight: 400;
-}
-
 .ft-copyright {
   border-color: #3F650A !important;
+}
+
+.footer-info-icon {
+  font-size: 14px;
+}
+
+.footer-info-icon svg {
+  width: 24px;
+  margin-right: 8px;
 }
 
 /* FOOTER END */
@@ -1075,9 +1114,43 @@ dd {
   height: 450px;
 }
 
-/* FOOD GRADE START */
+.contact-box-footer .con-des {
+  color: #1B1B1B !important;
+}
 
+.cursor-pointer {
+  cursor: pointer;
+}
 
-/* FOOD GRADE END */
+.con-des-hover:hover {
+  opacity: 0.7;
+  transition: all 0.4s ease 0s;
+}
+
+.link-id {
+  font-size: 18px;
+  color: #424242;
+  font-weight: 600;
+}
+
+.post-title {
+  margin-top: 15px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.product_reviews_tab,
+.product_reviews_tab.active,
+.product_reviews_tab:hover {
+  border: 2px solid #3F650A;
+  background-color: transparent;
+  color: #1B1B1B;
+  font-weight: 500;
+}
+
+.product_reviews_tab.active {
+  background-color: #3F650A !important;
+}
 
 /* MAIN SECTION END */

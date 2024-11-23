@@ -2,18 +2,21 @@
 <html lang="en">
 
 <head>
-  {% load static %}
+  {% load static %} 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Quality Control</title>
   <link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon">
-  
+
   <link href="{% static 'assets/bootstrap-dist/bootstrap.min.css' %}" rel="stylesheet" />
 
   <link href="{% static 'assets/css/fonts.css' %}" rel="stylesheet" />
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
   <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet" />
   <link href="{% static 'assets/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/css//animate.css' %}" rel="stylesheet" />
+  <!-- Add Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -21,27 +24,27 @@
   <div class="container-fluid top-info-nav fixed-top">
     <div class="d-flex gap-2 gap-sm-5 justify-content-center respon-row">
       <div class="contact-info d-flex align-items-center gap-2 gap-sm-3">
-        <span class="contact-number">
+        <a class="contact-number" href="tel:+919426105559">
           <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
             stroke-linejoin="round" class="phone-icon" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
             </path>
           </svg>
-          +91 94261 05559</span>
+          +91 94261 05559</a>
         <span class="contact-divider"></span>
-        <span class="contact-email">
+        <a class="contact-email" href="mailto:bamokamnc@gmail.com">
           <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" class="email-icon"
             xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
             </path>
           </svg>
-          bamokamnc@gmail.com</span>
+          bamokamnc@gmail.com</a>
       </div>
 
       <div class="social-info social-respon-row d-flex align-items-center gap-2 gap-sm-4">
-        <a class="facebook-icon" href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <a class="facebook-icon">
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -67,6 +70,15 @@
             </path>
           </svg>
         </a>
+
+       <a class="linkedin-icon" href="https://www.linkedin.com/in/bamoka-industries-a87453322/?originalSubdomain=in" target="_blank" aria-label="Linkedin">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+            </path>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
@@ -89,53 +101,35 @@
         <div class="collapse navbar-collapse nav-right-item justify-content-center" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 pt-4 pt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
+              <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item dropdown product-sub-menu">
-              <a class="nav-link dropdown-toggle" href="/product">Products</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/fastHydrationproduct">Fast Hydration</a></li>
-                <li><a class="dropdown-item" href="/industrialgradeproduct">Industrial Grade</a></li>
-                <li><a class="dropdown-item" href="/foodgradeproduct">Food Grade</a></li>
-                <li><a class="dropdown-item" href="/churiproduct">Churi</a></li>
-                <li><a class="dropdown-item" href="/kormaproduct">Korma</a></li>
+              <span class="nav-link dropdown-toggle">Products</span>
+              <ul class="dropdown-menu text-uppercase">
+                <li><a class="dropdown-item" href="split-guar-gum.html">guar gum split</a></li>
+                <li><a class="dropdown-item" href="fast-hydration.html">Fast Hydration Guar Gum</a></li>
+                <li><a class="dropdown-item" href="industrial-grade.html">Industrial Grade Guar Gum</a></li>
+                <li><a class="dropdown-item" href="food-grade.html">Food Grade Guar Gum</a></li>
+                <li><a class="dropdown-item" href="churi.html">Guar Gum Churi</a></li>
+                <li><a class="dropdown-item" href="korma.html">Guar Gum Korama</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/applcation">Applications</a>
+              <a class="nav-link" href="application.html">Applications</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/packagingstorage">Packaging & Storage</a>
+              <a class="nav-link" href="packaging-storage.html">Packaging & Storage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/qualitycontrol">Quality Control</a>
+              <a class="nav-link active" href="quality-control.html">Quality Control</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-
-          <div class="position-relative d-flex gap-2">
-            <!-- Search Icon -->
-            <div class="search-container">
-              <button class="search-btn" id="search-toggle">
-                <svg stroke="#424242" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="18px"
-                  width="18px" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M456.69 421.39 362.6 327.3a173.81 173.81 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3zM97.92 222.72a124.8 124.8 0 1 1 124.8 124.8 124.95 124.95 0 0 1-124.8-124.8z">
-                  </path>
-                </svg>
-              </button>
-            </div>
-
-            <!-- Search Input (hidden by default) -->
-            <div class="search-input-container collapse" id="searchInput">
-              <input type="text" class="form-control" placeholder="Search..." />
-            </div>
-          </div>
         </div>
       </div>
     </nav>
@@ -149,7 +143,7 @@
         <div class="hero_wrapper d-flex justify-content-center align-items-center h-100">
           <div class="container">
             <div class="hero-content-wrapp text-center">
-              <h1 class="hero-title">Quality Control</h1>
+              <h1 class="hero-title wow animate__fadeInUp" data-wow-delay="0.2s">Quality Control</h1>
             </div>
           </div>
         </div>
@@ -160,86 +154,60 @@
           <div class="container">
             <div class="mn-quality-wrapp">
               <div class="row">
-                <div class="mn-title-con col-12 col-md-8 col-xl-10">
+                <div class="mn-title-con col-12 col-md-8 col-xl-10 wow fadeInUp" data-wow-delay="0.2s">
                   <h5 class="mn-title">Maintaining <span>quality</span> is our top priority.</h5>
                   <p class="mn-des">At Bamoka Industries, we start with strict Guar Gum Quality control procedures since
-                    we
-                    are dedicated to
-                    providing items of the highest calibre. Modern Quality Control (QC) procedures are built on our
-                    Industrial
-                    Grade Guar Gum, Food Grade Guar Gum and Fast Hydration Guar to ensure that every product satisfies
-                    all
-                    the industry requirements before it leaves. We operate two distinct plants for the manufacturing of
-                    refined
-                    Guar Splits and Guar Gum Powder, ensuring the finest delivery of guar gum quality, in this way we
-                    produce
-                    high-viscosity and high-purity Guar Gum Powder.</p>
+                    we are dedicated to providing items of the highest calibre. Modern Quality Control (QC) procedures
+                    are built on our Industrial Grade Guar Gum, Food Grade Guar Gum and Fast Hydration Guar to ensure
+                    that every product satisfies all the industry requirements before it leaves. We operate two distinct
+                    plants for the manufacturing of refined Guar Splits and Guar Gum Powder, ensuring the finest
+                    delivery of guar gum quality, in this way we produce high-viscosity and high-purity Guar Gum Powder.
+                  </p>
                 </div>
 
-                <div class="col-12 col-md-4 col-xl-2 flex mt-3 mt-md-0">
+                <div class="col-12 col-md-4 col-xl-2 flex mt-3 mt-md-0 wow fadeInRight" data-wow-delay="0.4s">
                   <div class="mn-img h-100">
-                    <img src="{% static 'assets/images/quality-control/Quality-Control-02.png' %}" class="h-100 object-fit-cover"
+                    <img src="{% static 'assets/images/quality-control/Quality-Control-02_update.png' %}" class="h-100 object-fit-cover"
                       alt="Quality-Control">
                   </div>
                 </div>
               </div>
 
-              <div class="major-factore pt-3">
+              <div class="major-factore pt-3 wow fadeInUp" data-wow-delay="0.6s">
                 <h6 class="mf-title">Here are some of the major factors that distinguishes us from others</h6>
-
                 <ul class="mf-list mt-3 gap-3 d-flex flex-column ps-3">
-                  <li class="mf-item">
-                    Our plants are fully automated, and we process Guar Gum Powder under strict hygienic conditions.
-                  </li>
-                  <li class="mf-item">
-                    During the process, refined guar splits first go through a sieve, and then they pass through
-                    high-powered
-                    magnets to remove impurities.
-                  </li>
-                  <li class="mf-item">
-                    We take extra precautions at every stage of processing, starting from the purchase of guar seeds to
-                    the
-                    packaging of finished goods, ensuring
-                    that the Guar Gum Powder we produce is free from foreign elements and impurities.
-                  </li>
-                  <li class="mf-item">
-                    We have our own split manufacturing plant, where we purchase top-quality seeds, resulting in the
-                    best-quality splits.
-                  </li>
-                  <li class="mf-item">
-                    We use purified underground water, which is boiled before use.
-                  </li>
-                  <li class="mf-item">
-                    The water undergoes UV sterilization before mixing with splits to eliminate microorganisms. The
-                    splits are
-                    passed through sieves and high-powered magnets multiple times to remove all ferrous impurities.
-                  </li>
-                  <li class="mf-item">
-                    We blend 5.0 metric tons of powder to create one homogeneous batch. The blended material passes
-                    through a
-                    safety sieve to ensure that no foreign material mixes with the packed material.
-                  </li>
+                  <li class="mf-item">Our plants are fully automated, and we process Guar Gum Powder under strict
+                    hygienic conditions.</li>
+                  <li class="mf-item">During the process, refined guar splits first go through a sieve, and then they
+                    pass through high-powered magnets to remove impurities.</li>
+                  <li class="mf-item">We take extra precautions at every stage of processing, starting from the purchase
+                    of guar seeds to the packaging of finished goods, ensuring that the Guar Gum Powder we produce is
+                    free from foreign elements and impurities.</li>
+                  <li class="mf-item">We have our own split manufacturing plant, where we purchase top-quality seeds,
+                    resulting in the best-quality splits.</li>
+                  <li class="mf-item">We use purified underground water, which is boiled before use.</li>
+                  <li class="mf-item">The water undergoes UV sterilization before mixing with splits to eliminate
+                    microorganisms. The splits are passed through sieves and high-powered magnets multiple times to
+                    remove all ferrous impurities.</li>
+                  <li class="mf-item">We blend 5.0 metric tons of powder to create one homogeneous batch. The blended
+                    material passes through a safety sieve to ensure that no foreign material mixes with the packed
+                    material.</li>
                 </ul>
               </div>
 
               <div class="row pt-3">
-                <div class="mn-img col-12 col-md-4 col-xl-2 order-2 order-md-1 mt-3 mt-md-0">
-                  <img src="{% static 'assets/images/quality-control/4ea024d23a.jpeg' %}" alt="4ea024d23a">
+                <div class="mn-img col-12 col-md-4 col-xl-2 order-2 order-md-1 mt-3 mt-md-0 wow fadeInLeft"
+                  data-wow-delay="0.8s">
+                  <img src="{% static 'assets//images/quality-control/4ea024d23a.jpeg' %}" alt="4ea024d23a">
                 </div>
-                <div class="col-12 col-md-8 col-xl-10 order-1 order-md-2">
+                <div class="col-12 col-md-8 col-xl-10 order-1 order-md-2 wow fadeInRight" data-wow-delay="1s">
                   <h5 class="character-title"><span>Additional</span> Characteristics</h5>
-
                   <ul class="mf-list mt-3 gap-3 d-flex flex-column ps-3">
-                    <li class="mf-item">
-                      We provide a “Certificate of Analysis” for every lot that is shipped to our customers, along with
-                      a
-                      microbiological certificate. We operate our fully-equipped laboratory, equipped with the latest
-                      equipment, for conducting a variety of tests.
-                    </li>
-                    <li class="mf-item">
-                      Our products are GMO-free. We prioritize guar gum quality by not adding any preservatives to them,
-                      ensuring their natural quality.
-                    </li>
+                    <li class="mf-item">We provide a “Certificate of Analysis” for every lot that is shipped to our
+                      customers, along with a microbiological certificate. We operate our fully-equipped laboratory,
+                      equipped with the latest equipment, for conducting a variety of tests.</li>
+                    <li class="mf-item">Our products are GMO-free. We prioritize guar gum quality by not adding any
+                      preservatives to them, ensuring their natural quality.</li>
                   </ul>
                 </div>
               </div>
@@ -252,40 +220,39 @@
         <section class="cb-wrapper">
           <div class="container">
             <div class="row bg-white cn-box gap-3 py-5 px-5">
-              <div class="row-mn-title-con text-center">
+
+              <div class="row-mn-title-con text-center wow fadeInUp" data-wow-delay="0.2s">
                 <p class="cn-title mb-2">Raw Material Inspection</p>
                 <p class="cn-des">
                   We held regular inspections and climate monitoring to guarantee that the Guar Gum retains its original
                   specifications and satisfies the highest standards for quality set by the industry. Our expert quality
                   control staff carefully inspects incoming raw materials before the manufacturing process even starts.
-                  This
-                  initial inspection ensures that only the finest ingredients are used in the production of our
+                  This initial inspection ensures that only the finest ingredients are used in the production of our
                   products.
                 </p>
               </div>
 
-              <div class="row-mn-title-con text-center">
+              <div class="row-mn-title-con text-center wow fadeInUp" data-wow-delay="0.4s">
                 <p class="cn-title mb-2">In-Process Monitoring</p>
                 <p class="cn-des">
                   We keep a close watch on each step of the production process. To ensure that every operation complies
                   with
                   our exacting quality requirements, our staff performs routine inspections. To maintain consistency and
-                  credibility of the product, any deviations are quickly corrected.tion ensures that only the finest
-                  ingredients are used in the production of our products.
+                  credibility of the product, any deviations are quickly corrected.
                 </p>
               </div>
 
-              <div class="row-mn-title-con text-center">
+              <div class="row-mn-title-con text-center wow fadeInUp" data-wow-delay="0.6s">
                 <p class="cn-title mb-2">Climate-Controlled Storage</p>
                 <p class="cn-des">
                   We don’t just stop at production when it comes to quality. In order to maintain ideal conditions, our
                   storage facilities are set up with climate monitoring tools. By doing this, we can guarantee that our
-                  items
-                  will remain stable and that they will arrive at your location in the same perfect state that they left
-                  our
-                  production line.
+                  items will remain stable and that they will arrive at your location in the same perfect state that
+                  they left
+                  our production line.
                 </p>
               </div>
+
             </div>
           </div>
         </section>
@@ -295,19 +262,19 @@
         <section class="reg-status-wrapper py-5">
           <div class="container">
             <div class="reg-status-wrapp row">
-              <div class="col-12 col-md-8 col-xl-10">
+
+              <div class="col-12 col-md-8 col-xl-10 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="reg-title-con">
                   <h5 class="reg-title mb-2">REGULATORY <span>STATUS</span></h5>
                   <p class="reg-des">
                     Bamoka Industries is known for its food product’s safety and premium guar gum quality
-                    because we
-                    ensure that our production of guar gum is free of dangerous substances like dioxin and bacteria(bad
+                    because we ensure that our production of guar gum is free of dangerous substances like dioxin and
+                    bacteria(bad
                     microorganisms). Guar Meal is also safe and doesn’t have something called Aflatoxin. The best part
                     is that you can readily purchase and export guar gum powder without requiring any particular
-                    license,
-                    both within India and to foreign nations. This easy sales option of this product means it meets all
-                    the
-                    rules, making it a simple choice for both customers and businesses. And guess what? The Food &
+                    license, both within India and to foreign nations. This easy sales option of this product means it
+                    meets all
+                    the rules, making it a simple choice for both customers and businesses. And guess what? The Food &
                     Drug Administration in many countries thinks it’s safe too! Because it contains no contaminants or
                     preservatives, it is considered safe for consumption. Guar gum powder is a safe option, regardless
                     of whether you’re selling it internationally or utilizing it at home.
@@ -315,11 +282,12 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-4 mt-3 mt-md-0 col-xl-2 flex">
+              <div class="col-12 col-md-4 mt-3 mt-md-0 col-xl-2 flex wow fadeInRight" data-wow-delay="0.4s">
                 <div class="h-100">
                   <img src="{% static 'assets/images/quality-control/69feab5670.jpeg' %}" class="rounded h-100" alt="69feab5670">
                 </div>
               </div>
+
             </div>
           </div>
         </section>
@@ -336,31 +304,31 @@
                 <p class="con-sub-title text-white text-center mx-auto">
                   Bamoka Industries is one of the most prominent
                   Manufacturers, Exporters and Suppliers of an amazing Guar
-                  Gum Powder in Gujarat, Surat, India.
+                  Gum Powder in Navsari, Gujarat, India.
                 </p>
               </div>
 
               <div class="gt-form mt-5">
                 <form action="" class="row g-3">
                   <div class="col-sm-6 from-input">
-                    <input type="text" placeholder="Name" name="name"
+                    <input type="text" placeholder="Name"
                       class="form-control-plaintext border-bottom ps-1 custom-form-group" />
                   </div>
 
                   <div class="col-sm-6 from-input">
-                    <input type="email" placeholder="E-mail" name="email"
+                    <input type="text" placeholder="E-mail"
                       class="form-control-plaintext border-bottom ps-1 custom-form-group" />
                   </div>
 
                   <div class="col-12 from-input">
-                    <textarea placeholder="Comments" name="comments"
+                    <textarea placeholder="Comments"
                       class="form-control-plaintext custom-form-group bg-transparent border-0 border-bottom ps-1"
                       aria-label="With textarea"></textarea>
                   </div>
 
                   <div class="senc-message mt-5">
-                    <button class="read_more_intro text-white w-100" type="submit">
-                      Send
+                    <button class="read_more_intro text-white w-100">
+                      Sand
                     </button>
                   </div>
                 </form>
@@ -379,10 +347,6 @@
                   <div class="brand-footer py-2">
                     <img src="{% static 'assets/images/footer/footer-brand.png' %}" alt="" />
                   </div>
-
-                  <!-- <div class="brand-footer-con text-white py-2">
-                    X.....Y.....Z.....
-                  </div> -->
 
                   <div class="brand-social-link py-2">
                     <div class="social-info d-flex align-items-center gap-2 gap-sm-4">
@@ -412,6 +376,15 @@
                           </path>
                         </svg>
                       </a>
+
+                      <a class="linkedin-icon  d-flex align-item-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                          </path>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -419,25 +392,25 @@
                 <div class="col-12 col-xs-6 col-sm-4 col-md-5 mt-sm-0 mt-4">
                   <ul class="footer-list">
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/">Home</a>
+                      <a class="footer-link-item" href="index.html">Home</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/about">About</a>
+                      <a class="footer-link-item" href="about.html">About Us</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/product">Our Products</a>
+                      <a class="footer-link-item" href="product.html">Our Products</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/applcation">Applications</a>
+                      <a class="footer-link-item" href="application.html">Applications</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/packagingstorage">Packaging & Storage</a>
+                      <a class="footer-link-item" href="packaging-storage.html">Packaging & Storage</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item active" href="/qualitycontrol">Quality Control</a>
+                      <a class="footer-link-item active" href="quality-control.html">Quality Control</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/contact">Contact</a>
+                      <a class="footer-link-item" href="contact.html">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -448,9 +421,34 @@
                     <span class="text-white fw-light mb-3"><span class="fw-bold d-inline-block">Head Office</span> : U1
                       JD
                       complex, Aat
-                      Road, Eru, Navsari - 396445</span>
-                    <span class="text-white mb-3"> +91 94261 05559</span>
-                    <a href="mailto:bamokamnc@gmail.com">bamokamnc@gmail.com</a>
+                      Road, Eru, Navsari - 396445
+                    </span>
+
+                    <span class="mb-3">
+                      <a class="text-white d-flex align-items-center flex-nowrap footer-info-icon"
+                        href="tel:+919426105559">
+                        <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                          stroke-linejoin="round" class="phone-icon" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                          </path>
+                        </svg>
+                        +91 94261 05559
+                      </a>
+                    </span>
+
+                    <span>
+                      <a class="text-white d-flex align-items-center flex-nowrap footer-info-icon"
+                        href="mailto:bamokamnc@gmail.com">
+                        <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"
+                          class="email-icon" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                          </path>
+                        </svg>
+                        bamokamnc@gmail.com
+                      </a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -478,6 +476,7 @@
   <script src="{% static 'assets/owl.carousel/owl.carousel.min.js' %}"></script>
   <script src="{% static 'assets/js/carausol_slider.js' %}"></script>
   <script src="{% static 'assets/js/custom.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </body>
 
 </html>

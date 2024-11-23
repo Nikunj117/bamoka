@@ -2,18 +2,21 @@
 <html lang="en">
 
 <head>
-  {% load static %}
+  {% load static %} 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Packaging Storage</title>
   <link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon">
-  
+
   <link href="{% static 'assets/bootstrap-dist/bootstrap.min.css' %}" rel="stylesheet" />
 
   <link href="{% static 'assets/css/fonts.css' %}" rel="stylesheet" />
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
   <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet" />
   <link href="{% static 'assets/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/css//animate.css' %}" rel="stylesheet" />
+  <!-- Add Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -21,27 +24,27 @@
   <div class="container-fluid top-info-nav fixed-top">
     <div class="d-flex gap-2 gap-sm-5 justify-content-center respon-row">
       <div class="contact-info d-flex align-items-center gap-2 gap-sm-3">
-        <span class="contact-number">
+        <a class="contact-number" href="tel:+919426105559">
           <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
             stroke-linejoin="round" class="phone-icon" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
             </path>
           </svg>
-          +91 94261 05559</span>
+          +91 94261 05559</a>
         <span class="contact-divider"></span>
-        <span class="contact-email">
+        <a class="contact-email" href="mailto:bamokamnc@gmail.com">
           <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" class="email-icon"
             xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
             </path>
           </svg>
-          bamokamnc@gmail.com</span>
+          bamokamnc@gmail.com</a>
       </div>
 
       <div class="social-info social-respon-row d-flex align-items-center gap-2 gap-sm-4">
-        <a class="facebook-icon" href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <a class="facebook-icon">
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -67,6 +70,15 @@
             </path>
           </svg>
         </a>
+
+       <a class="linkedin-icon" href="https://www.linkedin.com/in/bamoka-industries-a87453322/?originalSubdomain=in" target="_blank" aria-label="Linkedin">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+            </path>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
@@ -89,53 +101,35 @@
         <div class="collapse navbar-collapse nav-right-item justify-content-center" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 pt-4 pt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
+              <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item dropdown product-sub-menu">
-              <a class="nav-link dropdown-toggle" href="/product">Products</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/fastHydrationproduct">Fast Hydration</a></li>
-                <li><a class="dropdown-item" href="/industrialgradeproduct">Industrial Grade</a></li>
-                <li><a class="dropdown-item" href="/foodgradeproduct">Food Grade</a></li>
-                <li><a class="dropdown-item" href="/churiproduct">Churi</a></li>
-                <li><a class="dropdown-item" href="/kormaproduct">Korma</a></li>
+              <span class="nav-link dropdown-toggle">Products</span>
+              <ul class="dropdown-menu text-uppercase">
+                <li><a class="dropdown-item" href="split-guar-gum.html">guar gum split</a></li>
+                <li><a class="dropdown-item" href="fast-hydration.html">Fast Hydration Guar Gum</a></li>
+                <li><a class="dropdown-item" href="industrial-grade.html">Industrial Grade Guar Gum</a></li>
+                <li><a class="dropdown-item" href="food-grade.html">Food Grade Guar Gum</a></li>
+                <li><a class="dropdown-item" href="churi.html">Guar Gum Churi</a></li>
+                <li><a class="dropdown-item" href="korma.html">Guar Gum Korama</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/applcation">Applications</a>
+              <a class="nav-link" href="application.html">Applications</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/packagingstorage">Packaging & Storage</a>
+              <a class="nav-link active" href="packaging-storage.html">Packaging & Storage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/qualitycontrol">Quality Control</a>
+              <a class="nav-link" href="quality-control.html">Quality Control</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-
-          <div class="position-relative d-flex gap-2">
-            <!-- Search Icon -->
-            <div class="search-container">
-              <button class="search-btn" id="search-toggle">
-                <svg stroke="#424242" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="18px"
-                  width="18px" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M456.69 421.39 362.6 327.3a173.81 173.81 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3zM97.92 222.72a124.8 124.8 0 1 1 124.8 124.8 124.95 124.95 0 0 1-124.8-124.8z">
-                  </path>
-                </svg>
-              </button>
-            </div>
-
-            <!-- Search Input (hidden by default) -->
-            <div class="search-input-container collapse" id="searchInput">
-              <input type="text" class="form-control" placeholder="Search..." />
-            </div>
-          </div>
         </div>
       </div>
     </nav>
@@ -149,7 +143,7 @@
         <div class="hero_wrapper d-flex justify-content-center align-items-center h-100">
           <div class="container">
             <div class="hero-content-wrapp text-center">
-              <h1 class="hero-title">
+              <h1 class="hero-title wow animate__fadeInUp" data-wow-delay="0.2s">
                 Packaging & Storage
               </h1>
             </div>
@@ -162,21 +156,105 @@
           <section class="intro_warpper pb-0">
             <div class="container">
               <div class="intro_wrapp">
-                <div class="packaging-title-con mb-3">
+                <!-- Packaging Title -->
+                <div class="packaging-title-con mb-3 wow fadeInUp" data-wow-delay="0.2s">
                   <h5 class="packaging-title">
-                    Packaging : <span>We provide all bag options here, complete with
-                      pictures and specifications</span>
+                    Packaging : <span>We provide all bag options here, complete with pictures and specifications</span>
                   </h5>
                 </div>
+
                 <div class="row align-items-center pb-5">
-                  <div class="col-md-6 pe-lg-5 mb-4 mb-md-0">
+                  <div class="col-12 px-lg-5 brand-slider wow fadeInRight" data-wow-delay="0.7s">
+                    <div class="row">
+                      <div class="col-md-12 px-lg-0 pt-lg-5">
+                        <div class="col-md-12 px-0 p-t-30">
+                          <div class="owl-carousel owl-theme" id="packagingSlider">
+                            <div class="item">
+                              <div class="col-md-12">
+                                <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
+                                  <img src="{% static 'assets/images/packaging/paper-bags_update.jpg' %}" class="intro-img object-fit-cover"
+                                    alt="intro-img" />
+                                </div>
+
+                                <div class="agrarium_production_header">
+                                  <h6 class="post-title">
+                                    Multiwall / Single Ply / Valve Paper Bags<br>
+                                    25kg, 50 LBS</h6>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="item">
+                              <div class="col-md-12">
+                                <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
+                                  <img src="{% static 'assets/images/packaging/jumbo-bags.jpg' %}" class="intro-img object-fit-cover"
+                                    alt="intro-img" />
+                                </div>
+
+                                <div class="agrarium_production_header">
+                                  <h6 class="post-title">
+                                    Jumbo Bags / Big Bags / Super Sacks /FIBC Bags<br>
+                                    1000 kg, 907 kg, , 2000 LBS, 800 kg, 500 kg</h6>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="item">
+                              <div class="col-md-12">
+                                <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
+                                  <img src="{% static 'assets/images/packaging/Stuffing-of-Paper-Bag.jpg' %}"
+                                    class="intro-img object-fit-cover" alt="intro-img" />
+                                </div>
+
+                                <div class="agrarium_production_header">
+                                  <h6 class="post-title">
+                                    Stuffing of Paper Bag on Floor</h6>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="item">
+                              <div class="col-md-12">
+                                <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
+                                  <img src="{% static 'assets/images/packaging/Bags-Wooden-pallets.jpg' %}"
+                                    class="intro-img object-fit-cover" alt="intro-img" />
+                                </div>
+
+                                <div class="agrarium_production_header">
+                                  <h6 class="post-title">
+                                    25 kg Bags on Wooden pallets</h6>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="item">
+                              <div class="col-md-12">
+                                <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
+                                  <img src="{% static 'assets/images/packaging/Jumbo-Bags-Multi.jpg' %}"
+                                    class="intro-img object-fit-cover" alt="intro-img" />
+                                </div>
+
+                                <div class="agrarium_production_header">
+                                  <h6 class="post-title">
+                                    Jumbo Bags</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 pe-lg-5 mb-4 mb-md-0 wow fadeInLeft" data-wow-delay="0.3s">
                     <div class="intro-continer">
                       <div class="intro-description-container">
                         <p class="intro-des">
                           Our guar gum powder is packaged in sealed, moisture-resistant, and light-blocking
                           containers to ensure its freshness and effectiveness. This commitment to quality
                           guarantees that our packaging maintains the product’s longevity and integrity,
-                          delivering excellence right to your doorstep. Our guar gum is branded as “MAHACOL”
+                          delivering excellence right to your doorstep. Our guar gum is branded as “BAMOKA”
                           and is available in 25 kg bags, protected by 4-ply multi-wall paper.
                         </p>
                         <p class="intro-des">
@@ -194,24 +272,17 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="col-md-6 px-lg-5">
-                    <div class="intro-img-conatienr h-100">
-                      <img src="{% static 'assets/images/packaging/paper-bags.png' %}" class="intro-img w-100 h-100 object-fit-cover"
-                        alt="intro-img" />
-                    </div>
-                  </div>
                 </div>
 
-
-                <div class="packaging-title-con mb-3">
+                <!-- Storage Section -->
+                <div class="packaging-title-con mb-3 wow fadeInUp" data-wow-delay="0.5s">
                   <h5 class="storage-title">
                     Storage : <span>Fresh and Protected Products</span>
                   </h5>
                 </div>
 
                 <div class="row align-items-center">
-                  <div class="col-md-6 pe-lg-5 mb-4 mb-md-0">
+                  <div class="col-md-6 pe-lg-5 mb-4 mb-md-0 wow fadeInLeft" data-wow-delay="0.6s">
                     <div class="intro-continer">
                       <div class="intro-description-container">
                         <p class="intro-des">
@@ -229,44 +300,50 @@
                     </div>
                   </div>
 
-                  <div class="col-md-6 px-lg-5">
+                  <div class="col-md-6 px-lg-5 wow fadeInRight" data-wow-delay="0.7s">
                     <div class="intro-img-conatienr">
                       <img src="{% static 'assets/images/packaging/company-profile.png' %}" class="stor-img intro-img object-fit-cover"
                         alt="intro-img" />
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="ps-footer-con pt-5">
-                <div class="ps-dis">
-                  <p class="pb-3">Some key points that should be considered while purchasing and keeping Guar Gum
-                    packaging safe:</p>
+                  <!-- Footer Section with Points -->
+                  <div class="ps-footer-con pt-5">
+                    <div class="ps-dis">
+                      <p class="pb-3 wow fadeInUp" data-wow-delay="0.8s">Some key points that should be considered
+                        while
+                        purchasing and keeping Guar Gum packaging safe:</p>
 
-                  <div class="ps-list-item">
-                    <ul class="ps-3 d-flex flex-column gap-2">
-                      <li class="ps-item">Guar gum powder should be stored in a cool, dry place, away from heat and
-                        sunlight.</li>
-                      <li class="ps-item">It is advisable to consume the powder within a reasonable time after opening
-                        the bag.</li>
-                      <li class="ps-item">Prolonged exposure to open air can lead to moisture absorption, resulting in
-                        microbiological degradation due to the hygroscopic nature of guar gum powder.</li>
-                      <li class="ps-item">The properties of guar gum powder remain stable for 12 to 18 months. Shelf
-                        life may be extended by adding suitable preservatives.</li>
-                      <li class="ps-item">Proper packaging is crucial for maintaining its properties and protecting it
-                        from external factors. At Bamoka Industries, we ensure that the guar gum
-                        powder we deliver is fresh and of authentic quality. Choose us for 100% real and organic guar
-                        gum.</li>
-                    </ul>
+                      <div class="ps-list-item">
+                        <ul class="ps-3 d-flex flex-column gap-2">
+                          <li class="ps-item wow fadeInLeft" data-wow-delay="0.9s">Guar gum powder should be stored in
+                            a
+                            cool, dry place, away from heat and sunlight.</li>
+                          <li class="ps-item wow fadeInLeft" data-wow-delay="1s">It is advisable to consume the powder
+                            within a reasonable time after opening the bag.</li>
+                          <li class="ps-item wow fadeInLeft" data-wow-delay="1.1s">Prolonged exposure to open air can
+                            lead
+                            to moisture absorption, resulting in microbiological degradation due to the hygroscopic
+                            nature
+                            of guar gum powder.</li>
+                          <li class="ps-item wow fadeInLeft" data-wow-delay="1.2s">The properties of guar gum powder
+                            remain
+                            stable for 12 to 18 months. Shelf life may be extended by adding suitable preservatives.
+                          </li>
+                          <li class="ps-item wow fadeInLeft" data-wow-delay="1.3s">Proper packaging is crucial for
+                            maintaining its properties and protecting it from external factors. At Bamoka Industries,
+                            we
+                            ensure that the guar gum powder we deliver is fresh and of authentic quality. Choose us
+                            for 100%
+                            real and organic guar gum.</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
           </section>
           <!-- INTRO SECTION END -->
         </section>
-
-
 
         <!-- FOOTER START -->
         <footer class="footer_wrapper">
@@ -277,10 +354,6 @@
                   <div class="brand-footer py-2">
                     <img src="{% static 'assets/images/footer/footer-brand.png' %}" alt="" />
                   </div>
-
-                  <!-- <div class="brand-footer-con text-white py-2">
-                    X.....Y.....Z.....
-                  </div> -->
 
                   <div class="brand-social-link py-2">
                     <div class="social-info d-flex align-items-center gap-2 gap-sm-4">
@@ -310,6 +383,15 @@
                           </path>
                         </svg>
                       </a>
+
+                      <a class="linkedin-icon  d-flex align-item-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                          </path>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -317,25 +399,25 @@
                 <div class="col-12 col-xs-6 col-sm-4 col-md-5 mt-sm-0 mt-4">
                   <ul class="footer-list">
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/">Home</a>
+                      <a class="footer-link-item" href="index.html">Home</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/about">About</a>
+                      <a class="footer-link-item" href="about.html">About Us</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/product">Our Products</a>
+                      <a class="footer-link-item" href="product.html">Our Products</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/applcation">Applications</a>
+                      <a class="footer-link-item" href="application.html">Applications</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item active" href="/packagingstorage">Packaging & Storage</a>
+                      <a class="footer-link-item active" href="packaging-storage.html">Packaging & Storage</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/qualitycontrol">Quality Control</a>
+                      <a class="footer-link-item" href="quality-control.html">Quality Control</a>
                     </li>
                     <li class="footer-list-item">
-                      <a class="footer-link-item" href="/contact">Contact</a>
+                      <a class="footer-link-item" href="contact.html">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -346,9 +428,34 @@
                     <span class="text-white fw-light mb-3"><span class="fw-bold d-inline-block">Head Office</span> : U1
                       JD
                       complex, Aat
-                      Road, Eru, Navsari - 396445</span>
-                    <span class="text-white mb-3"> +91 94261 05559</span>
-                    <a href="mailto:bamokamnc@gmail.com">bamokamnc@gmail.com</a>
+                      Road, Eru, Navsari - 396445
+                    </span>
+
+                    <span class="mb-3">
+                      <a class="text-white d-flex align-items-center flex-nowrap footer-info-icon"
+                        href="tel:+919426105559">
+                        <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                          stroke-linejoin="round" class="phone-icon" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                          </path>
+                        </svg>
+                        +91 94261 05559
+                      </a>
+                    </span>
+
+                    <span>
+                      <a class="text-white d-flex align-items-center flex-nowrap footer-info-icon"
+                        href="mailto:bamokamnc@gmail.com">
+                        <svg stroke="#3F650A" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"
+                          class="email-icon" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                          </path>
+                        </svg>
+                        bamokamnc@gmail.com
+                      </a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -376,6 +483,7 @@
   <script src="{% static 'assets/owl.carousel/owl.carousel.min.js' %}"></script>
   <script src="{% static 'assets/js/carausol_slider.js' %}"></script>
   <script src="{% static 'assets/js/custom.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </body>
 
 </html>
