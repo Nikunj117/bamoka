@@ -101,14 +101,14 @@ class Applcation(TemplateView):
                 
         return redirect('applcation')
     
-class Product(TemplateView):
-    template_name = "product.html"
+class SplitguargumProduct(TemplateView):
+    template_name = "split-guar-gum.html"
 
     def get(self, request):
         return render(request, self.template_name)
 
     def post(self, request):
-        return redirect('product')
+        return redirect('splitguargum')
     
 class ChuriProduct(TemplateView):
     template_name = "churi.html"
