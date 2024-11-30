@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-  {% load static %} 
+  {% load static %}
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Packaging Storage</title>
   <link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon">
-
   <link href="{% static 'assets/bootstrap-dist/bootstrap.min.css' %}" rel="stylesheet" />
 
   <link href="{% static 'assets/css/fonts.css' %}" rel="stylesheet" />
@@ -109,12 +108,17 @@
             <li class="nav-item dropdown product-sub-menu">
               <span class="nav-link dropdown-toggle">Products</span>
               <ul class="dropdown-menu text-uppercase">
-                <li><a class="dropdown-item" href="/splitguargum">guar gum split</a></li>
-                <li><a class="dropdown-item" href="/fastHydrationproduct">Fast Hydration Guar Gum</a></li>
-                <li><a class="dropdown-item" href="/industrialgradeproduct">Industrial Grade Guar Gum</a></li>
-                <li><a class="dropdown-item" href="/foodgradeproduct">Food Grade Guar Gum</a></li>
-                <li><a class="dropdown-item" href="/churiproduct">Guar Gum Churi</a></li>
-                <li><a class="dropdown-item" href="/kormaproduct">Guar Gum Korama</a></li>
+                <li><a class="dropdown-item fw-medium text-wrap px-4" href="/fastHydrationproduct">Fast Hydration Guar
+                    Gum</a>
+                </li>
+                <li><a class="dropdown-item fw-medium text-wrap px-4" href="/industrialgradeproduct">Industrial Grade Guar
+                    Gum</a></li>
+                <li><a class="dropdown-item fw-medium text-wrap px-4" href="/foodgradeproduct">Food Grade Guar Gum</a>
+                </li>
+                <li><a class="dropdown-item fw-medium text-wrap px-4" href="/splitguargum">guar gum
+                    refined spilt</a></li>
+                <li><a class="dropdown-item fw-medium text-wrap px-4" href="/churiproduct">Guar Meal Churi</a></li>
+                <li><a class="dropdown-item fw-medium text-wrap px-4" href="/kormaproduct">Guar Meal Korama</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -163,81 +167,83 @@
                   </h5>
                 </div>
 
-                <div class="row align-items-center pb-5">
-                  <div class="col-12 px-lg-5 brand-slider wow fadeInRight" data-wow-delay="0.7s">
-                    <div class="row">
-                      <div class="col-md-12 px-lg-0 pt-lg-5">
-                        <div class="col-md-12 px-0 p-t-30">
-                          <div class="owl-carousel owl-theme" id="packagingSlider">
-                            <div class="item">
-                              <div class="col-md-12">
-                                <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
+                <div class="pb-5">
+                  <div class="row align-items-center pb-3">
+                    <div class="col-12 px-lg-5 brand-slider wow fadeInRight" data-wow-delay="0.7s">
+                      <div class="row">
+                        <div class="col-md-12 px-lg-0 pt-lg-5">
+                          <div class="col-md-12 px-0 p-t-30">
+                            <div class="owl-carousel owl-theme" id="packagingSlider">
+                              <div class="item">
+                                <div class="col-md-12">
+                                  <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
                                   <img src="{% static 'assets/images/packaging/paper-bags_update.jpg' %}" class="intro-img object-fit-cover"
-                                    alt="intro-img" />
-                                </div>
+                                      alt="intro-img" />
+                                  </div>
 
-                                <div class="agrarium_production_header">
-                                  <h6 class="post-title">
-                                    Multiwall / Single Ply / Valve Paper Bags<br>
-                                    25kg, 50 LBS</h6>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="item">
-                              <div class="col-md-12">
-                                <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
-                                  <img src="{% static 'assets/images/packaging/jumbo-bags.jpg' %}" class="intro-img object-fit-cover"
-                                    alt="intro-img" />
-                                </div>
-
-                                <div class="agrarium_production_header">
-                                  <h6 class="post-title">
-                                    Jumbo Bags / Big Bags / Super Sacks /FIBC Bags<br>
-                                    1000 kg, 907 kg, , 2000 LBS, 800 kg, 500 kg</h6>
+                                  <div class="agrarium_production_header">
+                                    <h6 class="post-title">
+                                      Multiwall / Single Ply / Valve Paper Bags<br>
+                                      25kg, 50 LBS</h6>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
 
+                              <div class="item">
+                                <div class="col-md-12">
+                                  <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
+                                    <img src="{% static 'assets/images/packaging/jumbo-bags.jpg' %}" class="intro-img object-fit-cover"
+                                      alt="intro-img" />
+                                  </div>
 
-                            <div class="item">
-                              <div class="col-md-12">
-                                <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
-                                  <img src="{% static 'assets/images/packaging/Stuffing-of-Paper-Bag.jpg' %}"
-                                    class="intro-img object-fit-cover" alt="intro-img" />
-                                </div>
-
-                                <div class="agrarium_production_header">
-                                  <h6 class="post-title">
-                                    Stuffing of Paper Bag on Floor</h6>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="item">
-                              <div class="col-md-12">
-                                <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
-                                  <img src="{% static 'assets/images/packaging/Bags-Wooden-pallets.jpg' %}"
-                                    class="intro-img object-fit-cover" alt="intro-img" />
-                                </div>
-
-                                <div class="agrarium_production_header">
-                                  <h6 class="post-title">
-                                    25 kg Bags on Wooden pallets</h6>
+                                  <div class="agrarium_production_header">
+                                    <h6 class="post-title">
+                                      Jumbo Bags / Big Bags / Super Sacks /FIBC Bags<br>
+                                      1000 kg, 907 kg, , 2000 LBS, 800 kg, 500 kg</h6>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
 
-                            <div class="item">
-                              <div class="col-md-12">
-                                <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
-                                  <img src="{% static 'assets/images/packaging/Jumbo-Bags-Multi.jpg' %}"
-                                    class="intro-img object-fit-cover" alt="intro-img" />
+
+                              <div class="item">
+                                <div class="col-md-12">
+                                  <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
+                                    <img src="{% static 'assets/images/packaging/Stuffing-of-Paper-Bag.jpg' %}"
+                                      class="intro-img object-fit-cover" alt="intro-img" />
+                                  </div>
+
+                                  <div class="agrarium_production_header">
+                                    <h6 class="post-title">
+                                      Stuffing of Paper Bag on Floor</h6>
+                                  </div>
                                 </div>
+                              </div>
 
-                                <div class="agrarium_production_header">
-                                  <h6 class="post-title">
-                                    Jumbo Bags</h6>
+                              <div class="item">
+                                <div class="col-md-12">
+                                  <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
+                                    <img src="{% static 'assets/images/packaging/Bags-Wooden-pallets.jpg' %}"
+                                      class="intro-img object-fit-cover" alt="intro-img" />
+                                  </div>
+
+                                  <div class="agrarium_production_header">
+                                    <h6 class="post-title">
+                                      25 kg Bags on Wooden pallets</h6>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="item">
+                                <div class="col-md-12">
+                                  <div class="brand-item d-flex justify-content-center align-items-center mx-auto">
+                                    <img src="{% static 'assets/images/packaging/Jumbo-Bags-Multi.jpg' %}"
+                                      class="intro-img object-fit-cover" alt="intro-img" />
+                                  </div>
+
+                                  <div class="agrarium_production_header">
+                                    <h6 class="post-title">
+                                      Jumbo Bags</h6>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -245,32 +251,115 @@
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="col-12 pe-lg-5 mb-4 mb-md-0 wow fadeInLeft" data-wow-delay="0.3s">
-                    <div class="intro-continer">
-                      <div class="intro-description-container">
-                        <p class="intro-des">
-                          Our guar gum powder is packaged in sealed, moisture-resistant, and light-blocking
-                          containers to ensure its freshness and effectiveness. This commitment to quality
-                          guarantees that our packaging maintains the product’s longevity and integrity,
-                          delivering excellence right to your doorstep. Our guar gum is branded as “BAMOKA”
-                          and is available in 25 kg bags, protected by 4-ply multi-wall paper.
-                        </p>
-                        <p class="intro-des">
-                          We recognize that different applications may require various packaging solutions,
-                          which is why we offer customizable options to meet your specific needs—whether
-                          for bulk operations or smaller quantities for specialized uses. Upon request, we can
-                          also supply poly-lined HDPE bags and jumbo bags ranging from 650 kg to 1000 kg.
-                        </p>
-                        <p class="intro-des">
-                          By using environmentally friendly materials and creating recyclable or biodegradable
-                          packaging, we strive to minimize our impact on the environment and enhance the value
-                          of guar gum for everyone. Choose Bamoka Industries, one of the leading guar gum
-                          suppliers in India.
-                        </p>
+                    <div class="col-12 pe-lg-5 mb-4 mb-md-0 wow fadeInLeft" data-wow-delay="0.3s">
+                      <div class="intro-continer">
+                        <div class="intro-description-container">
+                          <p class="intro-des">
+                            Our guar gum powder is packaged in sealed, moisture-resistant, and light-blocking
+                            containers to ensure its freshness and effectiveness. This commitment to quality
+                            guarantees that our packaging maintains the product’s longevity and integrity,
+                            delivering excellence right to your doorstep. Our guar gum is branded as “BAMOKA”
+                            and is available in 25 kg bags, protected by 4-ply multi-wall paper.
+                          </p>
+                          <p class="intro-des">
+                            We recognize that different applications may require various packaging solutions,
+                            which is why we offer customizable options to meet your specific needs—whether
+                            for bulk operations or smaller quantities for specialized uses. Upon request, we can
+                            also supply poly-lined HDPE bags and jumbo bags ranging from 650 kg to 1000 kg.
+                          </p>
+                          <p class="intro-des">
+                            By using environmentally friendly materials and creating recyclable or biodegradable
+                            packaging, we strive to minimize our impact on the environment and enhance the value
+                            of guar gum for everyone. Choose Bamoka Industries, one of the leading guar gum
+                            suppliers in India.
+                          </p>
+                        </div>
                       </div>
                     </div>
+                  </div>
+
+                  <div class="pro_space_wrapp pro-space-table overflow-hidden mb-4 wow fadeInRight"
+                    ata-wow-delay="0.3s">
+                    <table class="table table-bordered mb-0">
+                      <tbody class="pro-space-tbody fy-tbody">
+                        <tr>
+                          <td colspan="4" class="text-white bg-green fw-bold">Container Stuffing Shipment
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="fw-bold">Capacity of Each Bag</td>
+                          <td class="fw-bold">Product Description</td>
+                          <td class="fw-bold">
+                            1X20 FCl
+                            </br>
+                            (Palletized)
+                          </td>
+                          <td class="fw-bold">
+                            1X20 FCl
+                            </br>
+                            (No. Palletized)
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>25Kg Net</td>
+                          <td>
+                            Brown multiwall 4 ply paper bag inside liner or in brown Hdpe laminated paper bag with
+                            inside liner
+                          </td>
+                          <td>18 M/tons</td>
+                          <td>20 M/tons</td>
+                        </tr>
+
+                        <tr>
+                          <td>25Kg Net</td>
+                          <td>
+                            White multiwall single ply paper bag with inside liner or in white Hdpe laminated paper bag
+                            with inside liner
+                          </td>
+                          <td>18 M/tons</td>
+                          <td>20 M/tons</td>
+                        </tr>
+
+                        <tr>
+                          <td>50Kg Net</td>
+                          <td>
+                            White/brown Hdpe laminated paper bag with inside Liner/standard packing
+                          </td>
+                          <td>18 M/tons</td>
+                          <td>20 M/tons</td>
+                        </tr>
+
+                        <tr>
+                          <td>500Kg Net</td>
+                          <td>
+                            Jumbo Bag (Hdpe Woven Bag)
+                          </td>
+                          <td>18 M/tons</td>
+                          <td>20 M/tons</td>
+                        </tr>
+
+                        <tr>
+                          <td>600Kg Net</td>
+                          <td>
+                            Jumbo Bag (Hdpe Woven Bag)
+                          </td>
+                          <td>19 M/tons</td>
+                          <td>19 M/tons</td>
+                        </tr>
+
+                        <tr>
+                          <td>1000Kg Net</td>
+                          <td>
+                            Jumbo Bag (Hdpe Woven Bag)
+                          </td>
+                          <td>19.400 M/tons</td>
+                          <td>20 M/tons</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
 

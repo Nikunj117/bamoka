@@ -78,7 +78,11 @@
 
   /* ALLIED PRODUCT START */
   .ga-product {
-    width: 156px;
+    min-width: 156px;
+  }
+
+  .ga-product img {
+    height: 250px;
   }
 
   .gp-title {
@@ -123,7 +127,8 @@
   .adp-title-con .adp-title,
   .adp-title-con .adp-title span,
   .reg-title-con .reg-title,
-  .character-title {
+  .character-title,
+  .fy-unique-title {
     font-size: 34px;
   }
 
@@ -276,6 +281,10 @@
   .intro-title.indud-title {
     font-size: 50px;
   }
+
+  .product-sub-menu ul {
+    width: fit-content;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -410,6 +419,10 @@
   #brandSlider .owl-stage-outer .owl-stage {
     align-items: center;
   }
+
+  .agrarium-heading-content {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -538,7 +551,8 @@
   .ind-title-con .ind-title,
   .ind-title-con .ind-chs,
   .adp-title-con .adp-title,
-  .adp-title-con .adp-title span {
+  .adp-title-con .adp-title span,
+  .fy-unique-title {
     font-size: 20px;
   }
 

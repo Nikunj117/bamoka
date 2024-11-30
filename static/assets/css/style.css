@@ -207,6 +207,10 @@ dd {
   display: block;
 }
 
+.product-sub-menu ul {
+  width: 232px;
+}
+
 /* HEADER CSS END */
 
 /* MAIN SECTION STRT */
@@ -419,7 +423,7 @@ dd {
 }
 
 .ga-product {
-  width: 188px;
+  max-width: 188px;
   padding: 0 !important;
   overflow: hidden;
   background-color: #FFFFFF;
@@ -719,20 +723,38 @@ dd {
   min-width: 1024px;
 }
 
-.dp-nav-pill .nav-pills .nav-item .nav-link.active {
-  padding: 0;
-  color: #3F650A;
-  border-bottom: 1px solid #3F650A;
-  background-color: transparent;
-  border-radius: 0;
-}
-
 .dp-nav-pill .nav-pills .nav-item .nav-link {
-  padding: 0%;
-  color: #424242;
+  padding: 14px 20px;
+  color: #666666;
   font-size: 18px;
   font-weight: 600;
+  border-radius: 5px;
+  background-color: #ebebeb;
+  border: 1px solid #e3e3e3;
+  text-wrap-mode: nowrap;
 }
+
+.id-nav {
+  padding: 14px 20px;
+  color: #666666;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #ebebeb;
+  border: 1px solid #e3e3e3;
+  text-wrap-mode: nowrap;
+}
+
+.dp-nav-pill .nav-pills .nav-item .nav-link.active,
+.dp-nav-pill .nav-pills .nav-item .nav-link:hover,
+.id-nav:hover {
+  background-color: #f8f8f8;
+}
+
+.dp-nav-pill .nav-pills .nav-item .nav-link:hover {
+  background-color: #dcdcdc;
+}
+
 
 .dp-nav-pill .dp-nav-list .dp-nav-item {
   list-style: disc;
@@ -754,7 +776,7 @@ dd {
 }
 
 .pro-space-table table {
-  border-color: #3F650A;
+  border-color: #588d0e;
 }
 
 .pro-space-tbody tr td {
@@ -1141,16 +1163,164 @@ dd {
 }
 
 .product_reviews_tab,
-.product_reviews_tab.active,
-.product_reviews_tab:hover {
+.product_reviews_tab.active {
   border: 2px solid #3F650A;
   background-color: transparent;
   color: #1B1B1B;
   font-weight: 500;
+  transition: all 0.4s ease 0s;
 }
 
-.product_reviews_tab.active {
+.product_reviews_tab.active:hover {
+  opacity: 0.8;
+}
+
+.product_reviews_tab.active,
+.product_reviews_tab:hover {
+  background-color: #3F650A !important;
+  color: #FFFFFF;
+}
+
+.agrarium-heading-content {
+  font-size: 45px;
+  line-height: 1.111em;
+  font-weight: 600;
+}
+
+.bg-light-gray {
+  background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
+}
+
+.portfolio-item-content {
+  font-size: 16px;
+  color: #1B1B1B;
+}
+
+.bg-green {
   background-color: #3F650A !important;
 }
+
+.fy-unique-title {
+  font-size: 45px;
+  color: #1B1B1B;
+  font-weight: 600;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.fy-unique-title span {
+  color: #3F650A;
+}
+
+.fh-icon-box .fh-icon {
+  color: #FFFFFF;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #3F650A;
+}
+
+.fh-icon-box .fh-icon:after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  border: 1px dashed #FFF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fh-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.pl-100 {
+  padding-left: 100px;
+}
+
+.vc_empty_space {
+  height: 45px;
+}
+
+.m-50 {
+  margin-bottom: 50px;
+}
+
+.wpb_wrapper ul li {
+  list-style: disc;
+  list-style-position: outside;
+  font-size: 16px;
+}
+
+.bg-light-green {
+  background-color: #dcedc5 !important;
+}
+
+.fh-icon-box:hover .fh-title {
+  color: #3F650A;
+}
+
+/* HOME APPLICATION INDUSRIES START */
+
+.ai-box-wrapper {
+  width: 100%;
+  display: inline-block;
+  min-height: 250px;
+}
+
+.ai-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform .5s ease-in-out;
+  transform-style: preserve-3d;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+
+.ai-hoverbox-block-inner {
+  flex-shrink: 0;
+  padding: 20px;
+}
+
+.ai-hoverbox-back {
+  background-color: #ebebeb;
+}
+
+.ai-hoverbox-back-inner h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1B1B1B;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.ai-hoverbox:hover .ai-hoverbox-back,
+.ai-hoverbox-front {
+  transform: rotateY(0);
+}
+
+.ai-hoverbox:hover .ai-hoverbox-front {
+  transform: rotateY(-180deg);
+}
+
+.ai-hoverbox-back {
+  transform: rotateY(180deg);
+}
+
+/* HOME APPLICATION INDUSRIES END */
 
 /* MAIN SECTION END */
