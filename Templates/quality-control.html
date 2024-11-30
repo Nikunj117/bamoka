@@ -317,26 +317,27 @@
               </div>
 
               <div class="gt-form mt-5">
-                <form action="" class="row g-3">
+                <form method="post" action="" class="row g-3">
+                  {% csrf_token %}
                   <div class="col-sm-6 from-input">
-                    <input type="text" placeholder="Name"
+                    <input type="text" placeholder="Name" name="name"
                       class="form-control-plaintext border-bottom ps-1 custom-form-group" />
                   </div>
 
                   <div class="col-sm-6 from-input">
-                    <input type="text" placeholder="E-mail"
+                    <input type="text" placeholder="E-mail" name="email"
                       class="form-control-plaintext border-bottom ps-1 custom-form-group" />
                   </div>
 
                   <div class="col-12 from-input">
-                    <textarea placeholder="Comments"
+                    <textarea placeholder="Comments"  name="comments"
                       class="form-control-plaintext custom-form-group bg-transparent border-0 border-bottom ps-1"
                       aria-label="With textarea"></textarea>
                   </div>
 
                   <div class="senc-message mt-5">
-                    <button class="read_more_intro text-white w-100">
-                      Sand
+                    <button class="read_more_intro text-white w-100"  type="submit">
+                      Send
                     </button>
                   </div>
                 </form>

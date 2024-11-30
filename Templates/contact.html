@@ -165,35 +165,36 @@
               </div>
               <div class="row px-2 px-md-5 g-4">
                 <div class="col-12 col-md-6">
-                  <form class="contact-form wow fadeInLeft" data-wow-delay="0.3s">
+                  <form method="post" action="" class="contact-form wow fadeInLeft" data-wow-delay="0.3s">
+                    {% csrf_token %}
                     <div class="row">
                       <div class="mb-3 col-12 col-md-6 contact-from-group">
                         <label class="form-label contact-form-label">First Name</label>
                         <input type="text" class="contact-form-control border-0 bg-white text-black shadow-sm"
-                          placeholder="Your first name" />
+                          placeholder="Your first name"  name="firstname" />
                       </div>
                       <div class="mb-3 col-12 col-md-6 contact-from-group">
                         <label class="form-label contact-form-label">Last Name</label>
                         <input type="text" class="contact-form-control border-0 bg-white text-black shadow-sm"
-                          placeholder="Your last name" />
+                          placeholder="Your last name" name="lastname" />
                       </div>
                       <div class="mb-3 col-12 contact-from-group">
                         <label class="form-label contact-form-label">Email Address *</label>
                         <input type="email" class="contact-form-control border-0 bg-white text-black shadow-sm"
-                          placeholder="Add email" required />
+                          placeholder="Add email" name="contactemail" required />
                       </div>
                       <div class="mb-3 col-12 contact-from-group">
                         <label class="form-label contact-form-label">Subject</label>
                         <input type="email" class="contact-form-control border-0 bg-white text-black shadow-sm"
-                          placeholder="How we can help you" required />
+                          placeholder="How we can help you" name="subject" required />
                       </div>
                       <div class="mb-3 from-input contact-from-group">
                         <textarea placeholder="Comments"
                           class="form-control-plaintext border-0 bg-white text-black shadow-sm ps-1"
-                          aria-label="With textarea"></textarea>
+                          aria-label="With textarea" name="comments" ></textarea>
                       </div>
                       <div class="mb-3 form-check verify-form">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1"  name="privacypollicy"  />
                         <label class="form-check-label" for="exampleCheck1">You agree to our friendly
                           <a href="/">privacy policy</a></label>
                       </div>
